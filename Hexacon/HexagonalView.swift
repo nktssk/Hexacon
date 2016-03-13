@@ -144,25 +144,18 @@ public final class HexagonalView: UIScrollView {
     }
     
     private func positionAndAnimateItemView(forCenter center: CGPoint, ring: Int, index: Int) {
+        guard itemAppearance.animationType != .None else { return }
+        
         //set the new view's center
         let view = viewsArray[index]
         view.center = CGPoint(x: center.x,y: center.y)
         
+        let animationIndex = Double(itemAppearance.animationType == .Spiral ? index : ring)
+        
         //make a pop animation
-        switch itemAppearance.animationType {
-        case .Spiral:
-            UIView.animateWithDuration(0.3, delay: NSTimeInterval(Double(index)*itemAppearance.animationDuration), usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: { () -> Void in
-                view.transform = CGAffineTransformIdentity
-                }, completion: nil)
-            
-        case .Circle:
-            UIView.animateWithDuration(0.3, delay: NSTimeInterval(Double(ring)*itemAppearance.animationDuration), usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: { () -> Void in
-                view.transform = CGAffineTransformIdentity
-                }, completion: nil)
-            
-        case .None:
-            break
-        }
+        UIView.animateWithDuration(0.3, delay: NSTimeInterval(animationIndex*itemAppearance.animationDuration), usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+            view.transform = CGAffineTransformIdentity
+            }, completion: nil)
     }
     
     private func transformView(view: HexagonalItemView) {

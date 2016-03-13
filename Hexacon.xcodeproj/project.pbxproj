@@ -415,6 +415,7 @@
 				C2FFC4D61C95BA8100EC84BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2FFC4D71C95BA8100EC84BE /* Build configuration list for PBXNativeTarget "HexaconTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				C2FFC4D91C95BA8100EC84BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
