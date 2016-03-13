@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/jakecraige/RGB.git", tag: "v#{spec.version}", submodules: true }
-  spec.source_files = "RGB/**/*.{h,swift}"
+  spec.source = { git: "https://github.com/gautier-gdx/Hexacon.git", tag: "v#{spec.version}", submodules: true }
+  spec.source_files = "Hexacon/Hexacon/**/*.{h,swift}"
 
   spec.dependency "Curry", "~> 1.4.0"
 end
