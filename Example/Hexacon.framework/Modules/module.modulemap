@@ -1,0 +1,10 @@
+framework module Hexacon {
+  umbrella header "Hexacon.h"
+
+  export *
+  module * { export * }
+}
+
+module Hexacon.Swift {
+    header "Hexacon-Swift.h"
+}
