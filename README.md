@@ -16,9 +16,15 @@ protocol HexagonalViewDelegate: class {
 func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
 }
 
-protocol HexagonalViewDataSource: class {
+public protocol HexagonalViewDataSource: class {
 func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
-func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage
+func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage?
+func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView?
+}
+
+public extension HexagonalViewDataSource {
+func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage? { return nil }
+func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView? { return nil }
 }
 
 ```
