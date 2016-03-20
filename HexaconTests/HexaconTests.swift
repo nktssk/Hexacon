@@ -2,7 +2,7 @@
 //  HexaconTests.swift
 //  HexaconTests
 //
-//  Created by Gautier Gdx on 13/03/16.
+//  Created by Gautier Gdx on 20/03/16.
 //  Copyright © 2016 Gautier-gdx. All rights reserved.
 //
 

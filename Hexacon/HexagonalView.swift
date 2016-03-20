@@ -14,7 +14,13 @@ public protocol HexagonalViewDelegate: class {
 
 public protocol HexagonalViewDataSource: class {
     func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
-    func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage
+    func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage?
+    func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView?
+}
+
+public extension HexagonalViewDataSource {
+    func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage? { return nil }
+    func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView? { return nil }
 }
 
 public final class HexagonalView: UIScrollView {
@@ -128,10 +134,7 @@ public final class HexagonalView: UIScrollView {
         itemView.index = index
         
         //adding image with the proper configuration
-        itemView.addImage(hexagonalDataSource!.hexagonalView(self, imageForIndex: index),
-                            configure: itemAppearance.needToConfigureItem,
-                            borderColor: itemAppearance.itemBorderColor,
-                            borderWidth: itemAppearance.itemBorderWidth)
+        configureItemView(itemView,index:  index)
         
         if itemAppearance.animationType != .None {
             //setting the scale to 0 to perform lauching animation
@@ -141,6 +144,18 @@ public final class HexagonalView: UIScrollView {
         //add to content view
         self.contentView.addSubview(itemView)
         return itemView
+    }
+    
+    
+    private func configureItemView(itemView: HexagonalItemView,index: Int) {
+        if let image = hexagonalDataSource?.hexagonalView(self, imageForIndex: index) {
+            itemView.addImage(image,
+                configure: itemAppearance.needToConfigureItem,
+                borderColor: itemAppearance.itemBorderColor,
+                borderWidth: itemAppearance.itemBorderWidth)
+        } else if let view = hexagonalDataSource?.hexagonalView(self, viewForIndex: index) {
+            itemView.addView(view)
+        }
     }
     
     private func positionAndAnimateItemView(forCenter center: CGPoint, ring: Int, index: Int) {

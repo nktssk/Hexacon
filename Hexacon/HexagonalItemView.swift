@@ -26,9 +26,8 @@ public class HexagonalItemView: UIImageView {
         self.image = configure ? HexagonalItemView.roundImage(image: image,color: borderColor,borderWidth: borderWidth) : image
     }
     
-    //TODO: add the possibility to foncfigure the view with another view
-    func addView(view: UIImage,configure: Bool,borderColor: UIColor,borderWidth: CGFloat) {
-        
+    public func addView(view: UIView) {
+        self.image = HexagonalItemView.roundView(view: view)
     }
     
     // MARK: - event methods
@@ -42,6 +41,19 @@ public class HexagonalItemView: UIImageView {
     }
     
     // MARK: - class methods
+    
+    private static func roundView(view view: UIView) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0)
+        
+        guard let context = UIGraphicsGetCurrentContext() else { return UIImage() }
+        view.layer.renderInContext(context)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        return roundImage(image: image)
+    }
     
     private static func roundImage(image image: UIImage, color: UIColor? = nil, borderWidth: CGFloat = 0) -> UIImage {
         guard image.size != .zero else { return image }

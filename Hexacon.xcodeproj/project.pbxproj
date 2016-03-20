@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2FAA3281C9F0ABE004323BE /* HexaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAA3271C9F0ABE004323BE /* HexaconTests.swift */; };
+		C2FAA32A1C9F0ABE004323BE /* Hexacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */; };
+		C2FAA3371C9F0B9D004323BE /* HexaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAA3361C9F0B9D004323BE /* HexaconUITests.swift */; };
+		C2FAA33D1C9F0BBA004323BE /* HexaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAA33C1C9F0BBA004323BE /* HexaconUITests.swift */; };
 		C2FFC4C41C95BA8100EC84BE /* Hexacon.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FFC4C31C95BA8100EC84BE /* Hexacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2FFC4CB1C95BA8100EC84BE /* Hexacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */; };
-		C2FFC4D01C95BA8100EC84BE /* HexaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4CF1C95BA8100EC84BE /* HexaconTests.swift */; };
 		C2FFC4DF1C95BA9000EC84BE /* HexagonalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4DA1C95BA9000EC84BE /* HexagonalDirection.swift */; };
 		C2FFC4E01C95BA9000EC84BE /* HexagonalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4DB1C95BA9000EC84BE /* HexagonalItemView.swift */; };
 		C2FFC4E11C95BA9000EC84BE /* HexagonalItemViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4DC1C95BA9000EC84BE /* HexagonalItemViewAppearance.swift */; };
@@ -18,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2FFC4CC1C95BA8100EC84BE /* PBXContainerItemProxy */ = {
+		C2FAA32B1C9F0ABE004323BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2FFC4B71C95BA8100EC84BE /* Project object */;
 			proxyType = 1;
@@ -28,10 +30,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FAA3271C9F0ABE004323BE /* HexaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
+		C2FAA3291C9F0ABE004323BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FAA3341C9F0B9D004323BE /* HexaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FAA3361C9F0B9D004323BE /* HexaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaconUITests.swift; sourceTree = "<group>"; };
+		C2FAA3381C9F0B9D004323BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FAA33C1C9F0BBA004323BE /* HexaconUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexaconUITests.swift; sourceTree = "<group>"; };
 		C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hexacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FFC4C31C95BA8100EC84BE /* Hexacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hexacon.h; sourceTree = "<group>"; };
 		C2FFC4C51C95BA8100EC84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2FFC4CA1C95BA8100EC84BE /* HexaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FFC4CF1C95BA8100EC84BE /* HexaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
 		C2FFC4D11C95BA8100EC84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FFC4DA1C95BA9000EC84BE /* HexagonalDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalDirection.swift; sourceTree = "<group>"; };
@@ -42,6 +50,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C2FAA3221C9F0ABD004323BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FAA32A1C9F0ABE004323BE /* Hexacon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FAA3311C9F0B9D004323BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2FFC4BC1C95BA8100EC84BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,22 +72,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2FFC4C71C95BA8100EC84BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2FFC4CB1C95BA8100EC84BE /* Hexacon.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2FAA3261C9F0ABE004323BE /* HexaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2FAA3271C9F0ABE004323BE /* HexaconTests.swift */,
+				C2FAA3291C9F0ABE004323BE /* Info.plist */,
+			);
+			path = HexaconTests;
+			sourceTree = "<group>";
+		};
+		C2FAA3351C9F0B9D004323BE /* HexaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2FAA3361C9F0B9D004323BE /* HexaconUITests.swift */,
+				C2FAA3381C9F0B9D004323BE /* Info.plist */,
+			);
+			path = HexaconUITests;
+			sourceTree = "<group>";
+		};
 		C2FFC4B61C95BA8100EC84BE = {
 			isa = PBXGroup;
 			children = (
 				C2FFC4C21C95BA8100EC84BE /* Hexacon */,
 				C2FFC4CE1C95BA8100EC84BE /* HexaconTests */,
+				C2FAA3261C9F0ABE004323BE /* HexaconTests */,
+				C2FAA3351C9F0B9D004323BE /* HexaconUITests */,
 				C2FFC4C11C95BA8100EC84BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */,
-				C2FFC4CA1C95BA8100EC84BE /* HexaconTests.xctest */,
+				C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */,
+				C2FAA3341C9F0B9D004323BE /* HexaconUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +130,7 @@
 			children = (
 				C2FFC4CF1C95BA8100EC84BE /* HexaconTests.swift */,
 				C2FFC4D11C95BA8100EC84BE /* Info.plist */,
+				C2FAA33C1C9F0BBA004323BE /* HexaconUITests.swift */,
 			);
 			path = HexaconTests;
 			sourceTree = "<group>";
@@ -131,6 +168,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C2FAA3241C9F0ABD004323BE /* HexaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FAA32D1C9F0ABE004323BE /* Build configuration list for PBXNativeTarget "HexaconTests" */;
+			buildPhases = (
+				C2FAA3211C9F0ABD004323BE /* Sources */,
+				C2FAA3221C9F0ABD004323BE /* Frameworks */,
+				C2FAA3231C9F0ABD004323BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2FAA32C1C9F0ABE004323BE /* PBXTargetDependency */,
+			);
+			name = HexaconTests;
+			productName = HexaconTests;
+			productReference = C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2FAA3331C9F0B9D004323BE /* HexaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FAA3391C9F0B9D004323BE /* Build configuration list for PBXNativeTarget "HexaconUITests" */;
+			buildPhases = (
+				C2FAA3301C9F0B9D004323BE /* Sources */,
+				C2FAA3311C9F0B9D004323BE /* Frameworks */,
+				C2FAA3321C9F0B9D004323BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexaconUITests;
+			productName = HexaconUITests;
+			productReference = C2FAA3341C9F0B9D004323BE /* HexaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		C2FFC4BF1C95BA8100EC84BE /* Hexacon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2FFC4D41C95BA8100EC84BE /* Build configuration list for PBXNativeTarget "Hexacon" */;
@@ -149,24 +221,6 @@
 			productReference = C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C2FFC4C91C95BA8100EC84BE /* HexaconTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C2FFC4D71C95BA8100EC84BE /* Build configuration list for PBXNativeTarget "HexaconTests" */;
-			buildPhases = (
-				C2FFC4C61C95BA8100EC84BE /* Sources */,
-				C2FFC4C71C95BA8100EC84BE /* Frameworks */,
-				C2FFC4C81C95BA8100EC84BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C2FFC4CD1C95BA8100EC84BE /* PBXTargetDependency */,
-			);
-			name = HexaconTests;
-			productName = HexaconTests;
-			productReference = C2FFC4CA1C95BA8100EC84BE /* HexaconTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +231,13 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gautier-gdx";
 				TargetAttributes = {
-					C2FFC4BF1C95BA8100EC84BE = {
+					C2FAA3241C9F0ABD004323BE = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					C2FFC4C91C95BA8100EC84BE = {
+					C2FAA3331C9F0B9D004323BE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					C2FFC4BF1C95BA8100EC84BE = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -198,20 +255,28 @@
 			projectRoot = "";
 			targets = (
 				C2FFC4BF1C95BA8100EC84BE /* Hexacon */,
-				C2FFC4C91C95BA8100EC84BE /* HexaconTests */,
+				C2FAA3241C9F0ABD004323BE /* HexaconTests */,
+				C2FAA3331C9F0B9D004323BE /* HexaconUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C2FFC4BE1C95BA8100EC84BE /* Resources */ = {
+		C2FAA3231C9F0ABD004323BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2FFC4C81C95BA8100EC84BE /* Resources */ = {
+		C2FAA3321C9F0B9D004323BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFC4BE1C95BA8100EC84BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,6 +286,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C2FAA3211C9F0ABD004323BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FAA3281C9F0ABE004323BE /* HexaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FAA3301C9F0B9D004323BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FAA33D1C9F0BBA004323BE /* HexaconUITests.swift in Sources */,
+				C2FAA3371C9F0B9D004323BE /* HexaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2FFC4BB1C95BA8100EC84BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,25 +315,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2FFC4C61C95BA8100EC84BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2FFC4D01C95BA8100EC84BE /* HexaconTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2FFC4CD1C95BA8100EC84BE /* PBXTargetDependency */ = {
+		C2FAA32C1C9F0ABE004323BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C2FFC4BF1C95BA8100EC84BE /* Hexacon */;
-			targetProxy = C2FFC4CC1C95BA8100EC84BE /* PBXContainerItemProxy */;
+			targetProxy = C2FAA32B1C9F0ABE004323BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C2FAA32E1C9F0ABE004323BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HexaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2FAA32F1C9F0ABE004323BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HexaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C2FAA33A1C9F0B9D004323BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HexaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2FAA33B1C9F0B9D004323BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HexaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C2FFC4D21C95BA8100EC84BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -376,29 +490,25 @@
 			};
 			name = Release;
 		};
-		C2FFC4D81C95BA8100EC84BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = HexaconTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C2FFC4D91C95BA8100EC84BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = HexaconTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C2FAA32D1C9F0ABE004323BE /* Build configuration list for PBXNativeTarget "HexaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FAA32E1C9F0ABE004323BE /* Debug */,
+				C2FAA32F1C9F0ABE004323BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C2FAA3391C9F0B9D004323BE /* Build configuration list for PBXNativeTarget "HexaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FAA33A1C9F0B9D004323BE /* Debug */,
+				C2FAA33B1C9F0B9D004323BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C2FFC4BA1C95BA8100EC84BE /* Build configuration list for PBXProject "Hexacon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -413,15 +523,6 @@
 			buildConfigurations = (
 				C2FFC4D51C95BA8100EC84BE /* Debug */,
 				C2FFC4D61C95BA8100EC84BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C2FFC4D71C95BA8100EC84BE /* Build configuration list for PBXNativeTarget "HexaconTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C2FFC4D81C95BA8100EC84BE /* Debug */,
-				C2FFC4D91C95BA8100EC84BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
