@@ -30,7 +30,8 @@ final class HexagonalPattern {
                 return
             }
             //each time a new center is set we are sending it back to the scrollView
-            delegate?.hexagonalPattern(DidCreatePosition: position.center, forRing: position.ring, andIndex: positionIndex++)
+            delegate?.hexagonalPattern(DidCreatePosition: position.center, forRing: position.ring, andIndex: positionIndex)
+            positionIndex += 1
         }
     }
     
