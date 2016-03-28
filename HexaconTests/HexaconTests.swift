@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import Hexacon
 
 class HexaconTests: XCTestCase {
     
