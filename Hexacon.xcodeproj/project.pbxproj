@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2CD230C1CA95DE70004CAC7 /* HexaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD230A1CA95DE70004CAC7 /* HexaconTests.swift */; };
-		C2CD230D1CA95DE70004CAC7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2CD230B1CA95DE70004CAC7 /* Info.plist */; };
-		C2FAA32A1C9F0ABE004323BE /* Hexacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */; };
+		C2CD23241CA971940004CAC7 /* HexaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD23231CA971940004CAC7 /* HexaconTests.swift */; };
+		C2CD23261CA971940004CAC7 /* Hexacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */; };
+		C2CD232C1CA9719F0004CAC7 /* HexaconTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = C2CD23211CA971940004CAC7 /* HexaconTests.xctest */; };
 		C2FFC4C41C95BA8100EC84BE /* Hexacon.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FFC4C31C95BA8100EC84BE /* Hexacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2FFC4DF1C95BA9000EC84BE /* HexagonalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4DA1C95BA9000EC84BE /* HexagonalDirection.swift */; };
 		C2FFC4E01C95BA9000EC84BE /* HexagonalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4DB1C95BA9000EC84BE /* HexagonalItemView.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2FAA32B1C9F0ABE004323BE /* PBXContainerItemProxy */ = {
+		C2CD23271CA971940004CAC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2FFC4B71C95BA8100EC84BE /* Project object */;
 			proxyType = 1;
@@ -29,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C2CD230A1CA95DE70004CAC7 /* HexaconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
-		C2CD230B1CA95DE70004CAC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CD23211CA971940004CAC7 /* HexaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CD23231CA971940004CAC7 /* HexaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
+		C2CD23251CA971940004CAC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hexacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FFC4C31C95BA8100EC84BE /* Hexacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hexacon.h; sourceTree = "<group>"; };
 		C2FFC4C51C95BA8100EC84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,11 +43,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C2FAA3221C9F0ABD004323BE /* Frameworks */ = {
+		C2CD231E1CA971940004CAC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FAA32A1C9F0ABE004323BE /* Hexacon.framework in Frameworks */,
+				C2CD23261CA971940004CAC7 /* Hexacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,11 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2CD23221CA971940004CAC7 /* HexaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2CD23231CA971940004CAC7 /* HexaconTests.swift */,
+				C2CD23251CA971940004CAC7 /* Info.plist */,
+			);
+			path = HexaconTests;
+			sourceTree = "<group>";
+		};
 		C2FFC4B61C95BA8100EC84BE = {
 			isa = PBXGroup;
 			children = (
 				C2FFC4C21C95BA8100EC84BE /* Hexacon */,
-				C2FFC4CE1C95BA8100EC84BE /* HexaconTests */,
+				C2CD23221CA971940004CAC7 /* HexaconTests */,
 				C2FFC4C11C95BA8100EC84BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */,
-				C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */,
+				C2CD23211CA971940004CAC7 /* HexaconTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,15 +97,6 @@
 				C2FFC4C51C95BA8100EC84BE /* Info.plist */,
 			);
 			path = Hexacon;
-			sourceTree = "<group>";
-		};
-		C2FFC4CE1C95BA8100EC84BE /* HexaconTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2CD230A1CA95DE70004CAC7 /* HexaconTests.swift */,
-				C2CD230B1CA95DE70004CAC7 /* Info.plist */,
-			);
-			path = HexaconTests;
 			sourceTree = "<group>";
 		};
 		C2FFC4E41C95BA9300EC84BE /* View */ = {
@@ -132,22 +132,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C2FAA3241C9F0ABD004323BE /* HexaconTests */ = {
+		C2CD23201CA971940004CAC7 /* HexaconTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2FAA32D1C9F0ABE004323BE /* Build configuration list for PBXNativeTarget "HexaconTests" */;
+			buildConfigurationList = C2CD23291CA971940004CAC7 /* Build configuration list for PBXNativeTarget "HexaconTests" */;
 			buildPhases = (
-				C2FAA3211C9F0ABD004323BE /* Sources */,
-				C2FAA3221C9F0ABD004323BE /* Frameworks */,
-				C2FAA3231C9F0ABD004323BE /* Resources */,
+				C2CD231D1CA971940004CAC7 /* Sources */,
+				C2CD231E1CA971940004CAC7 /* Frameworks */,
+				C2CD231F1CA971940004CAC7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C2FAA32C1C9F0ABE004323BE /* PBXTargetDependency */,
+				C2CD23281CA971940004CAC7 /* PBXTargetDependency */,
 			);
 			name = HexaconTests;
 			productName = HexaconTests;
-			productReference = C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */;
+			productReference = C2CD23211CA971940004CAC7 /* HexaconTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C2FFC4BF1C95BA8100EC84BE /* Hexacon */ = {
@@ -178,8 +178,8 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gautier-gdx";
 				TargetAttributes = {
-					C2FAA3241C9F0ABD004323BE = {
-						CreatedOnToolsVersion = 7.2.1;
+					C2CD23201CA971940004CAC7 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 					C2FFC4BF1C95BA8100EC84BE = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -199,17 +199,16 @@
 			projectRoot = "";
 			targets = (
 				C2FFC4BF1C95BA8100EC84BE /* Hexacon */,
-				C2FAA3241C9F0ABD004323BE /* HexaconTests */,
+				C2CD23201CA971940004CAC7 /* HexaconTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C2FAA3231C9F0ABD004323BE /* Resources */ = {
+		C2CD231F1CA971940004CAC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2CD230D1CA95DE70004CAC7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,17 +216,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CD232C1CA9719F0004CAC7 /* HexaconTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C2FAA3211C9F0ABD004323BE /* Sources */ = {
+		C2CD231D1CA971940004CAC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2CD230C1CA95DE70004CAC7 /* HexaconTests.swift in Sources */,
+				C2CD23241CA971940004CAC7 /* HexaconTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,32 +246,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2FAA32C1C9F0ABE004323BE /* PBXTargetDependency */ = {
+		C2CD23281CA971940004CAC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C2FFC4BF1C95BA8100EC84BE /* Hexacon */;
-			targetProxy = C2FAA32B1C9F0ABE004323BE /* PBXContainerItemProxy */;
+			targetProxy = C2CD23271CA971940004CAC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C2FAA32E1C9F0ABE004323BE /* Debug */ = {
+		C2CD232A1CA971940004CAC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				INFOPLIST_FILE = HexaconTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		C2FAA32F1C9F0ABE004323BE /* Release */ = {
+		C2CD232B1CA971940004CAC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				ENABLE_TESTABILITY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				INFOPLIST_FILE = HexaconTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -357,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,14 +405,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2FAA32D1C9F0ABE004323BE /* Build configuration list for PBXNativeTarget "HexaconTests" */ = {
+		C2CD23291CA971940004CAC7 /* Build configuration list for PBXNativeTarget "HexaconTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2FAA32E1C9F0ABE004323BE /* Debug */,
-				C2FAA32F1C9F0ABE004323BE /* Release */,
+				C2CD232A1CA971940004CAC7 /* Debug */,
+				C2CD232B1CA971940004CAC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		C2FFC4BA1C95BA8100EC84BE /* Build configuration list for PBXProject "Hexacon" */ = {
 			isa = XCConfigurationList;

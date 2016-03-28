@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2FAA3241C9F0ABD004323BE"
+               BlueprintIdentifier = "C2CD23201CA971940004CAC7"
                BuildableName = "HexaconTests.xctest"
                BlueprintName = "HexaconTests"
                ReferencedContainer = "container:Hexacon.xcodeproj">
