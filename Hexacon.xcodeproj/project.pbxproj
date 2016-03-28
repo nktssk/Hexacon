@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2FAA3281C9F0ABE004323BE /* HexaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAA3271C9F0ABE004323BE /* HexaconTests.swift */; };
+		C2CD230C1CA95DE70004CAC7 /* HexaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD230A1CA95DE70004CAC7 /* HexaconTests.swift */; };
+		C2CD230D1CA95DE70004CAC7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2CD230B1CA95DE70004CAC7 /* Info.plist */; };
 		C2FAA32A1C9F0ABE004323BE /* Hexacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */; };
 		C2FFC4C41C95BA8100EC84BE /* Hexacon.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FFC4C31C95BA8100EC84BE /* Hexacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2FFC4DF1C95BA9000EC84BE /* HexagonalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFC4DA1C95BA9000EC84BE /* HexagonalDirection.swift */; };
@@ -28,15 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2CD230A1CA95DE70004CAC7 /* HexaconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
+		C2CD230B1CA95DE70004CAC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FAA3251C9F0ABD004323BE /* HexaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2FAA3271C9F0ABE004323BE /* HexaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
-		C2FAA3291C9F0ABE004323BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2FAA33C1C9F0BBA004323BE /* HexaconUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexaconUITests.swift; sourceTree = "<group>"; };
 		C2FFC4C01C95BA8100EC84BE /* Hexacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hexacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FFC4C31C95BA8100EC84BE /* Hexacon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hexacon.h; sourceTree = "<group>"; };
 		C2FFC4C51C95BA8100EC84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2FFC4CF1C95BA8100EC84BE /* HexaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaconTests.swift; sourceTree = "<group>"; };
-		C2FFC4D11C95BA8100EC84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FFC4DA1C95BA9000EC84BE /* HexagonalDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalDirection.swift; sourceTree = "<group>"; };
 		C2FFC4DB1C95BA9000EC84BE /* HexagonalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalItemView.swift; sourceTree = "<group>"; };
 		C2FFC4DC1C95BA9000EC84BE /* HexagonalItemViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalItemViewAppearance.swift; sourceTree = "<group>"; };
@@ -63,21 +61,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2FAA3261C9F0ABE004323BE /* HexaconTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2FAA3271C9F0ABE004323BE /* HexaconTests.swift */,
-				C2FAA3291C9F0ABE004323BE /* Info.plist */,
-			);
-			path = HexaconTests;
-			sourceTree = "<group>";
-		};
 		C2FFC4B61C95BA8100EC84BE = {
 			isa = PBXGroup;
 			children = (
 				C2FFC4C21C95BA8100EC84BE /* Hexacon */,
 				C2FFC4CE1C95BA8100EC84BE /* HexaconTests */,
-				C2FAA3261C9F0ABE004323BE /* HexaconTests */,
 				C2FFC4C11C95BA8100EC84BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,9 +93,8 @@
 		C2FFC4CE1C95BA8100EC84BE /* HexaconTests */ = {
 			isa = PBXGroup;
 			children = (
-				C2FFC4CF1C95BA8100EC84BE /* HexaconTests.swift */,
-				C2FFC4D11C95BA8100EC84BE /* Info.plist */,
-				C2FAA33C1C9F0BBA004323BE /* HexaconUITests.swift */,
+				C2CD230A1CA95DE70004CAC7 /* HexaconTests.swift */,
+				C2CD230B1CA95DE70004CAC7 /* Info.plist */,
 			);
 			path = HexaconTests;
 			sourceTree = "<group>";
@@ -187,7 +174,7 @@
 		C2FFC4B71C95BA8100EC84BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gautier-gdx";
 				TargetAttributes = {
@@ -222,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CD230D1CA95DE70004CAC7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FAA3281C9F0ABE004323BE /* HexaconTests.swift in Sources */,
+				C2CD230C1CA95DE70004CAC7 /* HexaconTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,16 +257,19 @@
 		C2FAA32E1C9F0ABE004323BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HexaconTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C2FAA32F1C9F0ABE004323BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HexaconTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gautier-gdx.HexaconTests";
