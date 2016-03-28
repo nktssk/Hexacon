@@ -9,6 +9,6 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/gautier-gdx/Hexacon.git", tag: "{spec.version}", submodules: true }
+  spec.source = { git: "https://github.com/gautier-gdx/Hexacon.git", tag: "#{spec.version}", submodules: true }
   spec.source_files = "Hexacon/*.{h,swift}"
 end
