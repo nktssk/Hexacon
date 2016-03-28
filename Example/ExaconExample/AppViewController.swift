@@ -54,7 +54,7 @@ class AppViewController: UIViewController {
 
 extension AppViewController: HexagonalViewDataSource {
     
-    func hexagonalView(hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage {
+    func hexagonalView(hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage? {
         return dataArray[index]
     }
     

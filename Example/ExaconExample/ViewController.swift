@@ -48,11 +48,12 @@ final class ViewController: UIViewController {
 
 extension ViewController: HexagonalViewDataSource {
     
-    func hexagonalView(hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage {
+    func hexagonalView(hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage? {
         return dataArray[index]
     }
     
     func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int {
+        print(dataArray.count)
         return dataArray.count - 1
     }
 }
