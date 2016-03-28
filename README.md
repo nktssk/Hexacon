@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-<a href="https://travis-ci.org/gautier-gdx/hexacon"><img alt="Travis Status" src="https://img.shields.io/gautier-gdx/hexacon.svg"/></a>
+<a href="https://travis-ci.org/gautier-gdx/Hexacon.svg"><img alt="Travis Status" src="https://img.shields.io/gautier-gdx/Hexacon.svg"/></a>
 <a href="https://img.shields.io/cocoapods/v/Hexacon.svg"><img alt="CocoaPods compatible" src="https://img.shields.io/cocoapods/v/Hexacon.svg"/></a>
 <a href="https://github.com/Carthage/Carthage"><img alt="Carthage compatible" src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"/></a>
 </p>
