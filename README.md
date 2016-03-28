@@ -12,7 +12,7 @@
 
 ## Synopsis
 
-**Hexacon** is a new way to share your content in your app by make it look like your apple watch
+**Hexacon** is a new way to display content in your app like the Apple Watch SpringBoard
 
 Inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-Prototype)
 
