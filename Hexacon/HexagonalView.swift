@@ -10,6 +10,12 @@ import UIKit
 
 public protocol HexagonalViewDelegate: class {
     func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+    func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int)
+}
+
+public extension HexagonalViewDelegate {
+    func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int) { }
+    func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int) { }
 }
 
 public protocol HexagonalViewDataSource: class {
@@ -46,7 +52,8 @@ public final class HexagonalView: UIScrollView {
     //we are using a zoom cache setted to 1 to make the snap work even if the user haven't zoomed yet
     private var zoomScaleCache: CGFloat = 1
     
-    private var lastFocusedViewIndex: Int = 0
+    //the last index where the Hexagonal view was centered on
+    public var lastFocusedViewIndex: Int = 0
     
     //ArrayUsed to contain all the view in the Hexagonal grid
     private var viewsArray = [HexagonalItemView]()
@@ -260,6 +267,9 @@ public final class HexagonalView: UIScrollView {
         guard centerOnEndScroll else { return }
         centerOnEndScroll = false
 
+        //calling delegate 
+        hexagonalDelegate?.hexagonalView(self, willCenterOnIndex: index)
+        
         //the view to center
         let view = viewsArray[Int(index)]
 
@@ -278,7 +288,7 @@ public final class HexagonalView: UIScrollView {
     
     - returns: an optionnal HexagonalItemView
     */
-    func viewForIndex(index: Int) -> HexagonalItemView? {
+    public func viewForIndex(index: Int) -> HexagonalItemView? {
         guard index < viewsArray.count else { return nil }
         
         return viewsArray[index]

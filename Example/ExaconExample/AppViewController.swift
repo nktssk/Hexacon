@@ -27,7 +27,7 @@ class AppViewController: UIViewController {
         view.hexagonalDelegate = self
         view.itemAppearance.needToConfigureItem = true
         view.itemAppearance.itemBorderWidth = 0
-        view.itemAppearance.animationType = .Spiral
+        view.itemAppearance.animationType = .Circle
         view.itemAppearance.animationDuration = 0.05
         return view
         }()

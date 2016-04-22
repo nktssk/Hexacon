@@ -21,6 +21,7 @@ Inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-
 ``` swift
 protocol HexagonalViewDelegate: class {
     func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+    func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int)
 }
 
 public protocol HexagonalViewDataSource: class {
@@ -72,6 +73,26 @@ use_frameworks!
 
 pod 'Hexacon'
 ```
+##Properties
+
+The HexagonalView has the following properties:
+```swift
+weak var hexagonalDataSource: HexagonalViewDataSource?
+```
+An object that supports the HexagonalViewDataSource protocol and can provide views or images to configures the HexagonalView.
+```swift
+ weak var hexagonalDelegate: HexagonalViewDelegate?
+```
+An object that supports the HexagonalViewDelegate protocol and can respond to HexagonalView events.
+```swift
+public var lastFocusedViewIndex: Int 
+```
+The index of the view where the HexagonalView is or was centered on.
+```swift
+public var itemAppearance: HexagonalItemViewAppearance
+```    
+the appearance is used to configure the global apperance of the layout and the HexagonalItemVIew
+dataSource method. 
 
 
 ## License
