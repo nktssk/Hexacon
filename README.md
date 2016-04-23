@@ -18,7 +18,7 @@ Inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-
 
 ## Demo
 <p align="center">
-<img src="https://raw.githubusercontent.com/gautier-gdx/Hexacon/assets/HexaconDemo2.gif" />
+<img src="https://raw.githubusercontent.com/gautier-gdx/Hexacon/assets/HexaconDemo3.gif" />
 </p>
 
 ## Installation
