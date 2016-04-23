@@ -16,27 +16,6 @@
 
 Inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-Prototype)
 
-### HexagonalViewDelegate & HexagonalViewDataSource
-
-``` swift
-protocol HexagonalViewDelegate: class {
-    func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
-    func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int)
-}
-
-public protocol HexagonalViewDataSource: class {
-    func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
-    func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage?
-    func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView?
-}
-
-public extension HexagonalViewDataSource {
-    func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage? { return nil }
-    func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView? { return nil }
-}
-
-```
-
 ## Installation
 
 ### Carthage
@@ -94,6 +73,48 @@ public var itemAppearance: HexagonalItemViewAppearance
 the appearance is used to configure the global apperance of the layout and the HexagonalItemVIew
 dataSource method. 
 
+### Methods
+
+``` swift
+func reloadData() 
+```
+This function load or reload all the view from the dataSource and refreshes the display
+``` swift
+func viewForIndex(index: Int) -> HexagonalItemView?
+```
+Return a view at given index if it exists
+
+### Protocols
+
+There is Two protocols in hexacon, HexagonalViewDataSource and  HexagonalViewDelegate
+
+# dataSource
+
+``` swift
+func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
+```
+Return the number of items the view will contain
+``` swift
+func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage?
+```
+Return a image to be displayed at index
+``` swift
+func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView?
+```
+Return a view to be displayed at index
+
+`NB: all of this methods are optional and you will have to choose whether you want to display a view or an image otherwise the image will be chosen in priority`
+
+# delegate
+
+``` swift
+func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+```
+This method is called when the user has selected a view
+``` swift
+func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int)
+```
+This method is called when the heaxagonal view will center on an item, it gives you the new value of lastFocusedViewIndex
 
 ## License
 
