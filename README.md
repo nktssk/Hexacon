@@ -88,7 +88,7 @@ Return a view at given index if it exists
 
 There is Two protocols in hexacon, HexagonalViewDataSource and  HexagonalViewDelegate
 
-# dataSource
+#### dataSource
 
 ``` swift
 func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
@@ -105,7 +105,7 @@ Return a view to be displayed at index
 
 `NB: all of this methods are optional and you will have to choose whether you want to display a view or an image otherwise the image will be chosen in priority`
 
-# delegate
+#### delegate
 
 ``` swift
 func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
