@@ -67,11 +67,48 @@ An object that supports the HexagonalViewDelegate protocol and can respond to He
 public var lastFocusedViewIndex: Int 
 ```
 The index of the view where the HexagonalView is or was centered on.
+
 ```swift
 public var itemAppearance: HexagonalItemViewAppearance
 ```    
-the appearance is used to configure the global apperance of the layout and the HexagonalItemVIew
-dataSource method. 
+the appearance is used to configure the global apperance of the layout and the HexagonalItemView
+
+#### Appearance
+
+```swift
+public struct HexagonalItemViewAppearance {
+
+    public var needToConfigureItem: Bool // used to circle image and add border, default is false
+    public var itemSize: CGFloat
+    public var itemSpacing: CGFloat
+    public var itemBorderWidth: CGFloat
+    public var itemBorderColor: UIColor
+
+    //animation
+    public var animationType: HexagonalAnimationType
+    public var animationDuration: NSTimeInterval
+}
+``` 
+The default appearance is:
+```swift
+ itemAppearance = HexagonalItemViewAppearance(
+    
+    needToConfigureItem: false,
+    itemSize: 50,
+    itemSpacing: 10,
+    itemBorderWidth: 5,
+    itemBorderColor: UIColor.grayColor(),
+
+    animationType: .Circle,
+    animationDuration: 0.2)
+``` 
+
+#### Animation
+
+There is three types of animation available (more to come)
+```swift
+public enum HexagonalAnimationType { case Spiral, Circle, None }
+``` 
 
 ### Methods
 
@@ -101,7 +138,7 @@ Return a image to be displayed at index
 ``` swift
 func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView?
 ```
-Return a view to be displayed at index
+Return a view to be displayed at index, the view will be transformed in an image before being displayed
 
 `NB: all of this methods are optional and you will have to choose whether you want to display a view or an image otherwise the image will be chosen in priority`
 
