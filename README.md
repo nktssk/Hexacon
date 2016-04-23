@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://cloud.githubusercontent.com/assets/6576319/13548379/48dc3ff0-e2ef-11e5-8ea8-89d12c479efd.png" />
+<img src="https://raw.githubusercontent.com/gautier-gdx/Hexacon/assets/hexacon-logo.png" />
 </p>
 
 <p align="center">
@@ -15,6 +15,11 @@
 **Hexacon** is a new way to display content in your app like the Apple Watch SpringBoard
 
 Inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-Prototype)
+
+## Demo
+<p align="center">
+<img src="https://raw.githubusercontent.com/gautier-gdx/Hexacon/assets/HexaconDemo2.gif" />
+</p>
 
 ## Installation
 
@@ -52,7 +57,7 @@ use_frameworks!
 
 pod 'Hexacon'
 ```
-##Properties
+## Properties
 
 The HexagonalView has the following properties:
 ```swift
