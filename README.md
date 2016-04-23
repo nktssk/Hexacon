@@ -156,7 +156,7 @@ This method is called when the user has selected a view
 ``` swift
 func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int)
 ```
-This method is called when the heaxagonal view will center on an item, it gives you the new value of lastFocusedViewIndex
+This method is called when the HexagonalView will center on an item, it gives you the new value of lastFocusedViewIndex
 
 ## License
 
