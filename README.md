@@ -21,6 +21,8 @@ Inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-
 <img src="https://raw.githubusercontent.com/gautier-gdx/Hexacon/assets/HexaconDemo3.gif" />
 </p>
 
+`NB: You can also use the example provided in the repository or use "pod try Hexacon"`
+
 ## Installation
 
 ### Carthage

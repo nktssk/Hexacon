@@ -68,5 +68,10 @@ extension AppViewController: HexagonalViewDelegate {
     func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int) {
         print("didSelectItemAtIndex: \(index)")
     }
+    
+    func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int) {
+        print("willCenterOnIndex: \(index)")
+
+    }
 }
 

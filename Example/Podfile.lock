@@ -1,10 +1,10 @@
 PODS:
-  - Hexacon (1.0.0)
+  - Hexacon (1.0.3)
 
 DEPENDENCIES:
   - Hexacon
 
 SPEC CHECKSUMS:
-  Hexacon: 828d411f9da8b370a59fa8cebbe208c5f091ba04
+  Hexacon: 0ba8da39ab1e1a3579fbd04ea1cf4841ee041320
 
 COCOAPODS: 0.38.2
