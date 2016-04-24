@@ -109,8 +109,6 @@ public final class HexagonalView: UIScrollView {
     
     // MARK: - init
     
-    
-    
     public init(frame: CGRect, itemAppearance: HexagonalItemViewAppearance) {
         self.itemAppearance = itemAppearance
         super.init(frame: frame)
@@ -210,9 +208,6 @@ public final class HexagonalView: UIScrollView {
     }
     
     private func transformView(view: HexagonalItemView) {
-        let size = bounds.size
-        let zoomScale = zoomScaleCache
-        let insets = contentInset
         let spacing = itemAppearance.itemSize + itemAppearance.itemSpacing/2
         
         //convert the ivew rect in the contentView coordinate
@@ -223,9 +218,49 @@ public final class HexagonalView: UIScrollView {
         
         //retrieve the center
         let center = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame))
-        var	distanceToBorder: CGFloat = size.width
-        let distanceToBeOffset = spacing * zoomScale
+        let distanceToBeOffset = spacing * zoomScaleCache
+        let	distanceToBorder = getDistanceToBorder(center: center,distanceToBeOffset: distanceToBeOffset,insets: contentInset)
         
+        //if we are close to a border
+        if distanceToBorder < distanceToBeOffset * 2 {
+        //if ere are out of bound
+            if distanceToBorder < CGFloat(-(Int(spacing*2.5))) {
+                //hide the view
+                view.transform = CGAffineTransformMakeScale(0, 0)
+            } else {
+                //find the new scale
+                var scale = max(distanceToBorder / (distanceToBeOffset * 2), 0)
+                scale = 1-pow(1-scale, 2)
+                
+                //transform the view
+                view.transform = CGAffineTransformMakeScale(scale, scale)
+            }
+        } else {
+            view.transform = CGAffineTransformIdentity
+        }
+    }
+    
+    private func centerScrollViewContents() {
+        let boundsSize = bounds.size
+        var contentsFrame = contentView.frame
+        
+        if contentsFrame.size.width < boundsSize.width {
+            contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0
+        } else {
+            contentsFrame.origin.x = 0.0
+        }
+        
+        if contentsFrame.size.height < boundsSize.height {
+            contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0
+        } else {
+            contentsFrame.origin.y = 0.0
+        }
+        contentView.frame = contentsFrame
+    }
+    
+    private func getDistanceToBorder(center center: CGPoint,distanceToBeOffset: CGFloat,insets: UIEdgeInsets) -> CGFloat {
+        let size = bounds.size
+        var	distanceToBorder: CGFloat = size.width
         
         //check if the view is close to the left
         //changing the distance to border and the offset accordingly
@@ -250,46 +285,9 @@ public final class HexagonalView: UIScrollView {
         let bottomDistance = size.height - center.y - insets.bottom
         if bottomDistance < distanceToBeOffset && bottomDistance < distanceToBorder {
             distanceToBorder = bottomDistance
-            
         }
         
-        //if we are close to a border
-        distanceToBorder *= 2
-        if distanceToBorder < distanceToBeOffset * 2 {
-        //if ere are out of bound
-            if distanceToBorder < CGFloat(-(Int(spacing*2.5))) {
-                //hide the view
-                view.transform = CGAffineTransformMakeScale(0, 0)
-            } else {
-                //find the new scale
-                var scale = max(distanceToBorder / (distanceToBeOffset * 2), 0)
-                scale = 1-pow(1-scale, 2)
-                
-                //transform the view
-                view.transform = CGAffineTransformMakeScale(scale, scale)
-            }
-        } else {
-            view.transform = CGAffineTransformIdentity
-        }
-        view.setNeedsLayout()
-    }
-    
-    private func centerScrollViewContents() {
-        let boundsSize = bounds.size
-        var contentsFrame = contentView.frame
-        
-        if contentsFrame.size.width < boundsSize.width {
-            contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0
-        } else {
-            contentsFrame.origin.x = 0.0
-        }
-        
-        if contentsFrame.size.height < boundsSize.height {
-            contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0
-        } else {
-            contentsFrame.origin.y = 0.0
-        }
-        contentView.frame = contentsFrame
+        return distanceToBorder*2
     }
     
     private func centerOnIndex(index: Int, zoomScale: CGFloat) {
@@ -359,7 +357,7 @@ public final class HexagonalView: UIScrollView {
         
         views.enumerate().forEach { (viewIndex: Int, view: UIView) -> () in
             let center = view.center
-            let potentialDistance = distanceBetweenPoint(x1: center.x, y1: center.y, x2: contentViewCenter.x, y2: contentViewCenter.y)
+            let potentialDistance = distanceBetweenPoint(point1: center, point2: contentViewCenter)
             
             if potentialDistance < distance || !hasItem {
                 hasItem = true
@@ -370,8 +368,8 @@ public final class HexagonalView: UIScrollView {
         return index
     }
     
-    private static func distanceBetweenPoint(x1 x1: CGFloat, y1: CGFloat, x2: CGFloat, y2: CGFloat) ->  CGFloat {
-        let distance = Double((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+    private static func distanceBetweenPoint(point1 point1: CGPoint, point2: CGPoint) ->  CGFloat {
+        let distance = Double((point1.x - point2.x) * (point1.x - point2.x) + (point1.y - point2.y) * (point1.y - point2.y))
         let squaredDistance = sqrt(distance)
         return CGFloat(squaredDistance)
     }
