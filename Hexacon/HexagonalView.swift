@@ -9,7 +9,20 @@
 import UIKit
 
 public protocol HexagonalViewDelegate: class {
+    /**
+     This method is called when the user has selected a view
+     
+     - parameter hexagonalView: The HexagonalView we are targeting
+     - parameter index:         The current Index
+     */
     func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+    
+    /**
+     This method is called when the HexagonalView will center on an item, it gives you the new value of lastFocusedViewIndex
+     
+     - parameter hexagonalView: The HexagonalView we are targeting
+     - parameter index:         The current Index
+     */
     func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int)
 }
 
@@ -19,8 +32,33 @@ public extension HexagonalViewDelegate {
 }
 
 public protocol HexagonalViewDataSource: class {
+    /**
+     Return the number of items the view will contain
+     
+     - parameter hexagonalView: The HexagonalView we are targeting
+     
+     - returns: The number of items
+     */
     func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
+    
+    /**
+     Return a image to be displayed at index
+     
+     - parameter hexagonalView: The HexagonalView we are targeting
+     - parameter index:         The current Index
+     
+     - returns: The image we want to display
+     */
     func hexagonalView(hexagonalView: HexagonalView,imageForIndex index: Int) -> UIImage?
+    
+    /**
+     Return a view to be displayed at index, the view will be transformed in an image before being displayed
+     
+     - parameter hexagonalView: The HexagonalView we are targeting
+     - parameter index:         The current Index
+     
+     - returns: The view we want to display
+     */
     func hexagonalView(hexagonalView: HexagonalView,viewForIndex index: Int) -> UIView?
 }
 
@@ -36,30 +74,38 @@ public final class HexagonalView: UIScrollView {
     private lazy var contentView = UIView()
     
     // MARK: - data
-    
-    //apperance of the itm in the hexagonal grid
-    public var itemAppearance: HexagonalItemViewAppearance
-    
-    //used to snap the view after scroll
-    private var centerOnEndScroll = false
-    
-    //delegate
-    public weak var hexagonalDelegate: HexagonalViewDelegate?
-    
-    //datasource
+
+    /**
+     An object that supports the HexagonalViewDataSource protocol and can provide views or images to configures the HexagonalView.
+     */
     public weak var hexagonalDataSource: HexagonalViewDataSource?
+
+    /**
+     An object that supports the HexagonalViewDelegate protocol and can respond to HexagonalView events.
+     */
+    public weak var hexagonalDelegate: HexagonalViewDelegate?
+
+    /**
+     The index of the view where the HexagonalView is or was centered on.
+     */
+    public var lastFocusedViewIndex: Int = 0
+    
+    /**
+     the appearance is used to configure the global apperance of the layout and the HexagonalItemView
+     */
+    public var itemAppearance: HexagonalItemViewAppearance
     
     //we are using a zoom cache setted to 1 to make the snap work even if the user haven't zoomed yet
     private var zoomScaleCache: CGFloat = 1
-    
-    //the last index where the Hexagonal view was centered on
-    public var lastFocusedViewIndex: Int = 0
     
     //ArrayUsed to contain all the view in the Hexagonal grid
     private var viewsArray = [HexagonalItemView]()
     
     //manager to create the hexagonal grid
     private var hexagonalPattern: HexagonalPattern!
+    
+    //used to snap the view after scroll
+    private var centerOnEndScroll = false
     
     // MARK: - init
     
@@ -98,23 +144,6 @@ public final class HexagonalView: UIScrollView {
     }
     
     // MARK: - configuration methods
-    
-    public func reloadData() {
-        contentView.subviews.forEach { $0.removeFromSuperview() }
-        viewsArray = [HexagonalItemView]()
-        
-        guard let datasource = hexagonalDataSource else { return }
-        
-        let numberOfItems = datasource.numberOfItemInHexagonalView(self)
-        
-        guard numberOfItems > 0 else { return }
-        
-        for index in 0...numberOfItems {
-            viewsArray.append(createHexagonalViewItem(index))
-        }
-        
-        self.createHexagonalGrid()
-    }
     
     private func createHexagonalGrid() {
         //instantiate the hexagonal pattern with the number of views
@@ -282,7 +311,27 @@ public final class HexagonalView: UIScrollView {
     // MARK: - public methods
     
     /**
-    retrive the HexagonalItemView from the HexagonalView if it's exist
+     This function load or reload all the view from the dataSource and refreshes the display
+     */
+    public func reloadData() {
+        contentView.subviews.forEach { $0.removeFromSuperview() }
+        viewsArray = [HexagonalItemView]()
+        
+        guard let datasource = hexagonalDataSource else { return }
+        
+        let numberOfItems = datasource.numberOfItemInHexagonalView(self)
+        
+        guard numberOfItems > 0 else { return }
+        
+        for index in 0...numberOfItems {
+            viewsArray.append(createHexagonalViewItem(index))
+        }
+        
+        self.createHexagonalGrid()
+    }
+    
+    /**
+    retrieve the HexagonalItemView from the HexagonalView if it's exist
     
     - parameter index: the current index of the HexagonalItemView
     
