@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "Hexacon"
-  spec.version = "1.0.1"
+  spec.version = "1.0.3"
   spec.summary = "A fancy hexagonal layout for displaying data like your Apple Watch"
   spec.homepage = "https://github.com/gautier-gdx/Hexacon"
   spec.license = { type: 'MIT', file: 'LICENSE' }

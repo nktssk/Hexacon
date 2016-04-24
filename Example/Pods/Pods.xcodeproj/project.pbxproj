@@ -10,6 +10,19 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>0846BC6775E66C8683F5BE68C9B2A6D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Hexacon-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>08DDBF26EDAFC774EFD3FD40D8D65F08</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -23,20 +36,45 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>0ED2DCED2B8D318050C0ADF00446CC7A</key>
+		<key>09EEC429AA09D00AB28399B56CF18A4F</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
+			<key>fileRef</key>
+			<string>909A257F4B74F6CD65C8EDC713F6B1D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0A912B2A84BE83017F25D04E076F9FD0</key>
+		<dict>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Hexacon.framework</string>
+			<string>HexagonalItemViewAppearance.swift</string>
 			<key>path</key>
-			<string>Hexacon.framework</string>
+			<string>Hexacon/HexagonalItemViewAppearance.swift</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>102CAEAA04016FBC126B7C6CDB20CC65</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>09EEC429AA09D00AB28399B56CF18A4F</string>
+				<string>758EF7510AC448ABDA025BA621BC5A39</string>
+				<string>F654770D4AD6BF087A4B2D663D8C962C</string>
+				<string>7D3989A4B744A0F9B2AE737C996F69DA</string>
+				<string>A9E4BC652FCDB6DEBD99F672461AD300</string>
+				<string>3B836EACF1274860B7DA2774D7735009</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>1857CC02AB11B0842927F80E13E73F0B</key>
 		<dict>
@@ -52,7 +90,7 @@
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>E84C730EC935FAB799F04E279502D96C</string>
+				<string>6625FADEA78E34B34ED6954F01850A9C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -65,34 +103,7 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>19815AA3F28D2878C419BDBFF09F971F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2C1AF639415604CFCC3C3B22D82303B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1AE525BD7B21967D439AE5FE31C06E24</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Hexacon-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1D083398EF1FA4B1E5D7E9202C82985D</key>
+		<key>1BD06AF83C8329BECE137DC5D96E13A7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -101,9 +112,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>HexagonalPattern.swift</string>
+			<string>HexagonalView.swift</string>
 			<key>path</key>
-			<string>Hexacon/HexagonalPattern.swift</string>
+			<string>Hexacon/HexagonalView.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -111,12 +122,12 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>D2C1AF639415604CFCC3C3B22D82303B</string>
-				<string>C41B3F1785E25914DDEE809F6B432B8A</string>
-				<string>C21E92C22B7AEF85D1DBD3960508EC6C</string>
-				<string>DB2B2065AF2563E038BBFE9D84964C0D</string>
-				<string>1D083398EF1FA4B1E5D7E9202C82985D</string>
-				<string>59DB5E5C5D687A386CB0E53671E3F8E3</string>
+				<string>20AF052D17D214E94A546C6966058D74</string>
+				<string>C115C5D66908EF31F2ED6D6AD688FCC2</string>
+				<string>A822BC79DCD5A7C8E8C535012B749782</string>
+				<string>0A912B2A84BE83017F25D04E076F9FD0</string>
+				<string>F27E5972B8BA286254A57564B226E3AF</string>
+				<string>1BD06AF83C8329BECE137DC5D96E13A7</string>
 				<string>238DE119B6D20F8B2EA3FB9577320019</string>
 			</array>
 			<key>isa</key>
@@ -128,12 +139,47 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>220E73FB1EF132D55EB92E75C9D855D4</key>
+		<key>1E2EB392FB52F0ABC17215258EC144CA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4A6024424707D6A901E1855FEFC60644</string>
+			<key>remoteInfo</key>
+			<string>Hexacon</string>
+		</dict>
+		<key>20AF052D17D214E94A546C6966058D74</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Hexacon.h</string>
+			<key>path</key>
+			<string>Hexacon/Hexacon.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22B15AA7B91686B17254E1D26345969B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1AE525BD7B21967D439AE5FE31C06E24</string>
+			<string>20AF052D17D214E94A546C6966058D74</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>238DE119B6D20F8B2EA3FB9577320019</key>
 		<dict>
@@ -141,10 +187,10 @@
 			<array>
 				<string>B66CCB3B8F0A7683DD00DFC8540A543B</string>
 				<string>F371D7B53ABE9B16157EF865C0AEDA28</string>
-				<string>7706D444896559870FFCE0746EFBBCE4</string>
-				<string>1AE525BD7B21967D439AE5FE31C06E24</string>
+				<string>0846BC6775E66C8683F5BE68C9B2A6D6</string>
+				<string>909A257F4B74F6CD65C8EDC713F6B1D8</string>
 				<string>D35DEBA8875A454A039F11CDF26AC17E</string>
-				<string>78CC724CEDB2B2272B7DFB5D1C9B0794</string>
+				<string>8987DB662B98AD69907CB03626ADEAC3</string>
 				<string>EB1757BCA92842B9BBD9B9A0E3B4DE33</string>
 			</array>
 			<key>isa</key>
@@ -155,19 +201,6 @@
 			<string>../Target Support Files/Hexacon</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24408EF16ADD41F6EA792DE172CF0182</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -183,13 +216,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2EF39B2FA9CED541616C7FE16D1551C1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C41B3F1785E25914DDEE809F6B432B8A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>305F92A8B43773B7C58B37A4C152F3CA</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -203,12 +229,44 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>3B836EACF1274860B7DA2774D7735009</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1BD06AF83C8329BECE137DC5D96E13A7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>3BDA2ABE9980F964226E0BA5A7C0021F</key>
 		<dict>
 			<key>fileRef</key>
 			<string>8B627767CC22EDC529AD863A2F470A0C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>4A6024424707D6A901E1855FEFC60644</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>73DF6B96037FF3B8903F3794470D9542</string>
+			<key>buildPhases</key>
+			<array>
+				<string>102CAEAA04016FBC126B7C6CDB20CC65</string>
+				<string>542630C6D3BBCD7E2FE28918B3E7C0CE</string>
+				<string>6A08D46E4C8E5D2F368869C563BDB957</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Hexacon</string>
+			<key>productName</key>
+			<string>Hexacon</string>
+			<key>productReference</key>
+			<string>F28D8F3B8F48142040841324B0DC6D6B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>4E115B03EDA1CD2E3B6009D62BCF8AF0</key>
 		<dict>
@@ -242,7 +300,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>24408EF16ADD41F6EA792DE172CF0182</string>
+				<string>80921CDC1E183127920315B11D804052</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -251,20 +309,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>59DB5E5C5D687A386CB0E53671E3F8E3</key>
+		<key>542630C6D3BBCD7E2FE28918B3E7C0CE</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA3F9F63CF5B715AB5CA296D1A0CDE6</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>HexagonalView.swift</string>
-			<key>path</key>
-			<string>Hexacon/HexagonalView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>5B979FBB8C8E39E47BC8A091BBAE31A5</key>
 		<dict>
@@ -278,24 +334,6 @@
 			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5BD3955C986721BBC9393E7804C88B55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>220E73FB1EF132D55EB92E75C9D855D4</string>
-				<string>2EF39B2FA9CED541616C7FE16D1551C1</string>
-				<string>A4B322642422A1E45260E082F8331423</string>
-				<string>CDECEB4F6C1FFC47696C13CB7396B0C9</string>
-				<string>B48A844F930F9D0E2D254ECDB46C8702</string>
-				<string>92A848FBFB22C6BF76E3E9B51109E62B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>5C03D3432D4FEC15A1A593908A0A795E</key>
 		<dict>
@@ -357,10 +395,62 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5ED42ACD78D101AF954914B192814544</key>
+		<key>6625FADEA78E34B34ED6954F01850A9C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Hexacon</string>
+			<key>target</key>
+			<string>4A6024424707D6A901E1855FEFC60644</string>
+			<key>targetProxy</key>
+			<string>1E2EB392FB52F0ABC17215258EC144CA</string>
+		</dict>
+		<key>685295877E6D08DF63D2EA071717F7EF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>90B6C1843ED428513426FEB7B0172B9E</string>
+				<string>5C03D3432D4FEC15A1A593908A0A795E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6A08D46E4C8E5D2F368869C563BDB957</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88D5FF7BD6AD3C2FECAEB2C0D77433F9</string>
+				<string>22B15AA7B91686B17254E1D26345969B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6AA31F6EA0C7D0F0174973D464988584</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6C2F07153C38D5E7F0B9AFA549C82958</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>7706D444896559870FFCE0746EFBBCE4</string>
+			<string>0846BC6775E66C8683F5BE68C9B2A6D6</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -413,12 +503,12 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>685295877E6D08DF63D2EA071717F7EF</key>
+		<key>73DF6B96037FF3B8903F3794470D9542</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>90B6C1843ED428513426FEB7B0172B9E</string>
-				<string>5C03D3432D4FEC15A1A593908A0A795E</string>
+				<string>EB993EBD172B59D80FA106409B5FE37C</string>
+				<string>6C2F07153C38D5E7F0B9AFA549C82958</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -427,45 +517,12 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>6AA31F6EA0C7D0F0174973D464988584</key>
+		<key>758EF7510AC448ABDA025BA621BC5A39</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>C115C5D66908EF31F2ED6D6AD688FCC2</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DB6354A5A5E0583B628E64C72AD6F28</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8C32A0627CF21343435E44DE52F4A9E2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6FA60EFE0FB7B551B2182A07CF9C70AC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F9A0587C0E2448BD1D14784B6B81512E</string>
-				<string>5ED42ACD78D101AF954914B192814544</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>75D98FF52E597A11900E131B6C4E1ADA</key>
 		<dict>
@@ -491,36 +548,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7706D444896559870FFCE0746EFBBCE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Hexacon-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>78CC724CEDB2B2272B7DFB5D1C9B0794</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Hexacon-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>78D6DB6AFC30D03760BF2E6B7C2ADBF8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>24408EF16ADD41F6EA792DE172CF0182</string>
+			<string>80921CDC1E183127920315B11D804052</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -548,6 +579,13 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>7D3989A4B744A0F9B2AE737C996F69DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0A912B2A84BE83017F25D04E076F9FD0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
@@ -563,6 +601,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>80921CDC1E183127920315B11D804052</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
 		<key>87B213035BAC5F75386F62D3C75D2342</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -573,6 +624,33 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88D5FF7BD6AD3C2FECAEB2C0D77433F9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8987DB662B98AD69907CB03626ADEAC3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8987DB662B98AD69907CB03626ADEAC3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Hexacon-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -588,13 +666,6 @@
 			<string>Pods-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C32A0627CF21343435E44DE52F4A9E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24408EF16ADD41F6EA792DE172CF0182</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>8D1534490D941DCA47C62AC4314182AF</key>
 		<dict>
@@ -669,6 +740,19 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>909A257F4B74F6CD65C8EDC713F6B1D8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Hexacon-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>90B6C1843ED428513426FEB7B0172B9E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -731,24 +815,32 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>92A848FBFB22C6BF76E3E9B51109E62B</key>
+		<key>A822BC79DCD5A7C8E8C535012B749782</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HexagonalItemView.swift</string>
+			<key>path</key>
+			<string>Hexacon/HexagonalItemView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A9E4BC652FCDB6DEBD99F672461AD300</key>
 		<dict>
 			<key>fileRef</key>
-			<string>59DB5E5C5D687A386CB0E53671E3F8E3</string>
+			<string>F27E5972B8BA286254A57564B226E3AF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>A4B322642422A1E45260E082F8331423</key>
+		<key>ADA3F9F63CF5B715AB5CA296D1A0CDE6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C21E92C22B7AEF85D1DBD3960508EC6C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B48A844F930F9D0E2D254ECDB46C8702</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D083398EF1FA4B1E5D7E9202C82985D</string>
+			<string>80921CDC1E183127920315B11D804052</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -793,19 +885,6 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BBE82649A7B03D4D1F9ED4CF87818FE7</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BC98DC5C107EE504D9CC497F9CC8A5D3</string>
-			<key>remoteInfo</key>
-			<string>Hexacon</string>
-		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
 			<key>children</key>
@@ -819,47 +898,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BC98DC5C107EE504D9CC497F9CC8A5D3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6FA60EFE0FB7B551B2182A07CF9C70AC</string>
-			<key>buildPhases</key>
-			<array>
-				<string>5BD3955C986721BBC9393E7804C88B55</string>
-				<string>6DB6354A5A5E0583B628E64C72AD6F28</string>
-				<string>E5FF5C159DC903C8F791952E350D3665</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Hexacon</string>
-			<key>productName</key>
-			<string>Hexacon</string>
-			<key>productReference</key>
-			<string>0ED2DCED2B8D318050C0ADF00446CC7A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>C21E92C22B7AEF85D1DBD3960508EC6C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>HexagonalItemView.swift</string>
-			<key>path</key>
-			<string>Hexacon/HexagonalItemView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C41B3F1785E25914DDEE809F6B432B8A</key>
+		<key>C115C5D66908EF31F2ED6D6AD688FCC2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -972,7 +1011,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>0ED2DCED2B8D318050C0ADF00446CC7A</string>
+				<string>F28D8F3B8F48142040841324B0DC6D6B</string>
 				<string>4F69E6296D6CB19BFE944E5148F5AC7E</string>
 			</array>
 			<key>isa</key>
@@ -981,13 +1020,6 @@
 			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDECEB4F6C1FFC47696C13CB7396B0C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB2B2065AF2563E038BBFE9D84964C0D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>CE1A92DAD4EAD52543F92022366CA872</key>
 		<dict>
@@ -1013,21 +1045,6 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2C1AF639415604CFCC3C3B22D82303B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Hexacon.h</string>
-			<key>path</key>
-			<string>Hexacon/Hexacon.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1079,38 +1096,9 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>BC98DC5C107EE504D9CC497F9CC8A5D3</string>
+				<string>4A6024424707D6A901E1855FEFC60644</string>
 				<string>1857CC02AB11B0842927F80E13E73F0B</string>
 			</array>
-		</dict>
-		<key>DB2B2065AF2563E038BBFE9D84964C0D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>HexagonalItemViewAppearance.swift</string>
-			<key>path</key>
-			<string>Hexacon/HexagonalItemViewAppearance.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5FF5C159DC903C8F791952E350D3665</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F447841DC27670CD7F86252B95A5ED35</string>
-				<string>19815AA3F28D2878C419BDBFF09F971F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>E7F21354943D9F42A70697D5A5EF72E9</key>
 		<dict>
@@ -1138,17 +1126,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E84C730EC935FAB799F04E279502D96C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Hexacon</string>
-			<key>target</key>
-			<string>BC98DC5C107EE504D9CC497F9CC8A5D3</string>
-			<key>targetProxy</key>
-			<string>BBE82649A7B03D4D1F9ED4CF87818FE7</string>
-		</dict>
 		<key>EB1757BCA92842B9BBD9B9A0E3B4DE33</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1162,37 +1139,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F371D7B53ABE9B16157EF865C0AEDA28</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Hexacon.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F447841DC27670CD7F86252B95A5ED35</key>
-		<dict>
-			<key>fileRef</key>
-			<string>78CC724CEDB2B2272B7DFB5D1C9B0794</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F9A0587C0E2448BD1D14784B6B81512E</key>
+		<key>EB993EBD172B59D80FA106409B5FE37C</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>7706D444896559870FFCE0746EFBBCE4</string>
+			<string>0846BC6775E66C8683F5BE68C9B2A6D6</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1246,6 +1196,56 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
+		</dict>
+		<key>F27E5972B8BA286254A57564B226E3AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HexagonalPattern.swift</string>
+			<key>path</key>
+			<string>Hexacon/HexagonalPattern.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F28D8F3B8F48142040841324B0DC6D6B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Hexacon.framework</string>
+			<key>path</key>
+			<string>Hexacon.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F371D7B53ABE9B16157EF865C0AEDA28</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Hexacon.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F654770D4AD6BF087A4B2D663D8C962C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A822BC79DCD5A7C8E8C535012B749782</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
