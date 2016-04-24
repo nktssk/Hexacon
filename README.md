@@ -14,7 +14,7 @@
 
 **Hexacon** is a new way to display content in your app like the Apple Watch SpringBoard
 
-Highly inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-Prototype)
+Highly inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-Prototype)\n
 Special thanks to [`zenly`](https://github.com/znly) for giving me the opportunity to do this
 
 <p align="center">
