@@ -9,9 +9,6 @@
 <a href="https://github.com/Carthage/Carthage"><img alt="Carthage compatible" src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"/></a>
 </p>
 
-
-## Synopsis
-
 **Hexacon** is a new way to display content in your app like the Apple Watch SpringBoard
 
 Highly inspired by the work of [`lmmenge`](https://github.com/lmmenge/WatchSpringboard-Prototype).
