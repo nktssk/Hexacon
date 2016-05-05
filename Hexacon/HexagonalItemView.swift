@@ -16,19 +16,27 @@ public class HexagonalItemView: UIImageView {
     
     // MARK: - data
     
+    public init(image: UIImage, appearance: HexagonalItemViewAppearance) {
+        if appearance.needToConfigureItem {
+            let modifiedImage = image.roundImage(appearance.itemBorderColor, borderWidth: appearance.itemBorderWidth)
+            super.init(image: modifiedImage)
+        } else {
+            super.init(image: image)
+        }
+    }
+    
+    public init(view: UIView) {
+        let image = view.roundImage()
+        super.init(image: image)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     public var index: Int?
     
     weak var delegate: HexagonalItemViewDelegate?
-    
-    // MARK: - instance methods
-    
-    public func addImage(image: UIImage,configure: Bool,borderColor: UIColor,borderWidth: CGFloat) {
-        self.image = configure ? HexagonalItemView.roundImage(image: image,color: borderColor,borderWidth: borderWidth) : image
-    }
-    
-    public func addView(view: UIView) {
-        self.image = HexagonalItemView.roundView(view: view)
-    }
     
     // MARK: - event methods
     
@@ -39,29 +47,31 @@ public class HexagonalItemView: UIImageView {
         
         delegate?.hexagonalItemViewClikedOnButton(forIndex: index)
     }
+
+}
+
+internal extension UIView {
     
-    // MARK: - class methods
-    
-    private static func roundView(view view: UIView) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0)
-        
+    func roundImage() -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0)
         guard let context = UIGraphicsGetCurrentContext() else { return UIImage() }
-        view.layer.renderInContext(context)
-        
+        self.layer.renderInContext(context)
         let image = UIGraphicsGetImageFromCurrentImageContext()
-        
         UIGraphicsEndImageContext()
-        
-        return roundImage(image: image)
+        return image.roundImage()
     }
+
+}
+
+internal extension UIImage {
     
-    private static func roundImage(image image: UIImage, color: UIColor? = nil, borderWidth: CGFloat = 0) -> UIImage {
-        guard image.size != .zero else { return image }
+    func roundImage(color: UIColor? = nil, borderWidth: CGFloat = 0) -> UIImage {
+        guard self.size != .zero else { return self }
         
-        let newImage = image.copy() as! UIImage
-        let cornerRadius = image.size.height/2
-        UIGraphicsBeginImageContextWithOptions(image.size, false, 1.0)
-        let bounds = CGRect(origin: CGPointZero, size: image.size)
+        let newImage = self.copy() as! UIImage
+        let cornerRadius = self.size.height/2
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 1.0)
+        let bounds = CGRect(origin: CGPointZero, size: self.size)
         let path = UIBezierPath(roundedRect: CGRectInset(bounds, borderWidth / 2, borderWidth / 2), cornerRadius: cornerRadius)
         let context = UIGraphicsGetCurrentContext()
         
@@ -84,4 +94,5 @@ public class HexagonalItemView: UIImageView {
         UIGraphicsEndImageContext()
         return finalImage ?? UIImage()
     }
+
 }
