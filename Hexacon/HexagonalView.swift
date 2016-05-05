@@ -146,7 +146,9 @@ public final class HexagonalView: UIScrollView {
     private func createHexagonalGrid() {
         //instantiate the hexagonal pattern with the number of views
         hexagonalPattern = HexagonalPattern(size: viewsArray.count, itemSpacing: itemAppearance.itemSpacing, itemSize: itemAppearance.itemSize)
-        hexagonalPattern.delegate = self
+        hexagonalPattern.repositionCenter = { [weak self] (center, ring, index) in
+            self?.positionAndAnimateItemView(forCenter: center, ring: ring, index: index)
+        }
         
         //set the contentView frame with the theorical size of th hexagonal grid
         let contentViewSize = hexagonalPattern.sizeForGridSize()
@@ -429,15 +431,6 @@ extension HexagonalView: UIScrollViewDelegate {
     }
 }
 
-
-// MARK: - HexagonalPatternDelegate
-
-extension HexagonalView: HexagonalPatternDelegate {
-    
-    func hexagonalPattern(DidCreatePosition center: CGPoint, forRing ring: Int, andIndex index: Int) {
-        positionAndAnimateItemView(forCenter: center, ring: ring, index: index)
-    }
-}
 
 extension HexagonalView: HexagonalItemViewDelegate {
     
