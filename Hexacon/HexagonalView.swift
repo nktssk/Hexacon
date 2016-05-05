@@ -146,7 +146,9 @@ public final class HexagonalView: UIScrollView {
     private func createHexagonalGrid() {
         //instantiate the hexagonal pattern with the number of views
         hexagonalPattern = HexagonalPattern(size: viewsArray.count, itemSpacing: itemAppearance.itemSpacing, itemSize: itemAppearance.itemSize)
-        hexagonalPattern.delegate = self
+        hexagonalPattern.repositionCenter = { [weak self] (center, ring, index) in
+            self?.positionAndAnimateItemView(forCenter: center, ring: ring, index: index)
+        }
         
         //set the contentView frame with the theorical size of th hexagonal grid
         let contentViewSize = hexagonalPattern.sizeForGridSize()
@@ -159,16 +161,23 @@ public final class HexagonalView: UIScrollView {
 
     private func createHexagonalViewItem(index: Int) -> HexagonalItemView {
         //instantiate the userView with the user
-        let itemView = HexagonalItemView(frame: CGRect(x: 0, y: 0, width: itemAppearance.itemSize, height: itemAppearance.itemSize))
+        
+        var itemView: HexagonalItemView
+
+        if let image = hexagonalDataSource?.hexagonalView(self, imageForIndex: index) {
+            itemView = HexagonalItemView(image: image, appearance: itemAppearance)
+        } else {
+            let view = (hexagonalDataSource?.hexagonalView(self, viewForIndex: index))!
+            itemView = HexagonalItemView(view: view)
+        }
+        
+        itemView.frame = CGRect(x: 0, y: 0, width: itemAppearance.itemSize, height: itemAppearance.itemSize)
         itemView.userInteractionEnabled = true
         //setting the delegate
         itemView.delegate = self
         
         //adding index in order to retrive the view later
         itemView.index = index
-        
-        //adding image with the proper configuration
-        configureItemView(itemView,index:  index)
         
         if itemAppearance.animationType != .None {
             //setting the scale to 0 to perform lauching animation
@@ -178,18 +187,6 @@ public final class HexagonalView: UIScrollView {
         //add to content view
         self.contentView.addSubview(itemView)
         return itemView
-    }
-    
-    
-    private func configureItemView(itemView: HexagonalItemView,index: Int) {
-        if let image = hexagonalDataSource?.hexagonalView(self, imageForIndex: index) {
-            itemView.addImage(image,
-                configure: itemAppearance.needToConfigureItem,
-                borderColor: itemAppearance.itemBorderColor,
-                borderWidth: itemAppearance.itemBorderWidth)
-        } else if let view = hexagonalDataSource?.hexagonalView(self, viewForIndex: index) {
-            itemView.addView(view)
-        }
     }
     
     private func positionAndAnimateItemView(forCenter center: CGPoint, ring: Int, index: Int) {
@@ -429,15 +426,6 @@ extension HexagonalView: UIScrollViewDelegate {
     }
 }
 
-
-// MARK: - HexagonalPatternDelegate
-
-extension HexagonalView: HexagonalPatternDelegate {
-    
-    func hexagonalPattern(DidCreatePosition center: CGPoint, forRing ring: Int, andIndex index: Int) {
-        positionAndAnimateItemView(forCenter: center, ring: ring, index: index)
-    }
-}
 
 extension HexagonalView: HexagonalItemViewDelegate {
     

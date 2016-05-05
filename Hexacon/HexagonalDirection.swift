@@ -8,11 +8,6 @@
 
 import UIKit
 
-private extension CGFloat {
-    static let horizontalPadding: CGFloat = 1.2
-    static let verticalPadding: CGFloat = 1
-}
-
 enum HexagonalDirection: Int {
     
     case Right
@@ -40,25 +35,23 @@ enum HexagonalDirection: Int {
      - returns: a point diving the direction of the new center
      */
     func direction() -> CGPoint {
+        
+        let horizontalPadding: CGFloat = 1.2
+        let verticalPadding: CGFloat = 1
+        
         switch self {
-        case .Right:
-            return CGPoint(x: .horizontalPadding,y: 0)
-            
-        case .RightUp:
-            return CGPoint(x: .horizontalPadding/2,y: -.verticalPadding)
-            
-        case .LeftUp:
-            return CGPoint(x: -.horizontalPadding/2,y: -.verticalPadding)
-            
-        case .Left:
-            return CGPoint(x: -.horizontalPadding,y: 0)
-            
-        case .LeftDown:
-            return CGPoint(x: -.horizontalPadding/2,y: .verticalPadding)
-            
-        case .RightDown:
-            return CGPoint(x: .horizontalPadding/2,y: .verticalPadding)
-            
+            case .Right:
+                return CGPoint(x: horizontalPadding,y: 0)
+            case .RightUp:
+                return CGPoint(x: horizontalPadding/2,y: -verticalPadding)
+            case .LeftUp:
+                return CGPoint(x: -horizontalPadding/2,y: -verticalPadding)
+            case .Left:
+                return CGPoint(x: -horizontalPadding,y: 0)
+            case .LeftDown:
+                return CGPoint(x: -horizontalPadding/2,y: verticalPadding)
+            case .RightDown:
+                return CGPoint(x: horizontalPadding/2,y: verticalPadding)
         }
     }
 }
