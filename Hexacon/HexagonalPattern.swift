@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol HexagonalPatternDelegate: class {
-    func hexagonalPattern(DidCreatePosition center: CGPoint, forRing ring: Int,andIndex index: Int)
-}
-
 final class HexagonalPattern {
     
     // MARK: - typeAlias
@@ -20,7 +16,7 @@ final class HexagonalPattern {
     
     // MARK: - data
 
-    weak var delegate: HexagonalPatternDelegate?
+    internal var repositionCenter: ((CGPoint, Int, Int) -> ())?
     
     private var position: HexagonalPosition! {
         didSet {
@@ -30,7 +26,7 @@ final class HexagonalPattern {
                 return
             }
             //each time a new center is set we are sending it back to the scrollView
-            delegate?.hexagonalPattern(DidCreatePosition: position.center, forRing: position.ring, andIndex: positionIndex)
+            repositionCenter?(position.center, position.ring, positionIndex)
             positionIndex += 1
         }
     }
