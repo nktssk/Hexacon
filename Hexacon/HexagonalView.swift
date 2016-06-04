@@ -112,7 +112,22 @@ public final class HexagonalView: UIScrollView {
     public init(frame: CGRect, itemAppearance: HexagonalItemViewAppearance) {
         self.itemAppearance = itemAppearance
         super.init(frame: frame)
+     
+        setUpView()
+    }
+    
+    convenience public override init(frame: CGRect) {
+        self.init(frame: frame, itemAppearance: HexagonalItemViewAppearance.defaultAppearance())
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        itemAppearance = HexagonalItemViewAppearance.defaultAppearance()
+        super.init(coder: aDecoder)
         
+        setUpView()
+    }
+
+    func setUpView() {
         //configure scrollView
         delaysContentTouches = false
         showsHorizontalScrollIndicator = false
@@ -124,21 +139,9 @@ public final class HexagonalView: UIScrollView {
         delegate = self
         minimumZoomScale = 0.2
         maximumZoomScale = 2
-
+        
         //add contentView
         addSubview(contentView)
-    }
-    
-    convenience public override init(frame: CGRect) {
-        self.init(frame: frame, itemAppearance: HexagonalItemViewAppearance.defaultAppearance())
-    }
-
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override public func layoutSubviews() {
-        super.layoutSubviews()
     }
     
     // MARK: - configuration methods
