@@ -23,6 +23,23 @@ public struct HexagonalItemViewAppearance {
     public let animationType: HexagonalAnimationType
     public let animationDuration: NSTimeInterval
     
+    public init(needToConfigureItem: Bool,
+            itemSize: CGFloat,
+            itemSpacing: CGFloat,
+            itemBorderWidth: CGFloat,
+            itemBorderColor: UIColor,
+            animationType: HexagonalAnimationType,
+            animationDuration: NSTimeInterval) {
+        
+        self.needToConfigureItem = needToConfigureItem
+        self.itemSize = itemSize
+        self.itemSpacing = itemSpacing
+        self.itemBorderWidth = itemBorderWidth
+        self.itemBorderColor = itemBorderColor
+        self.animationType = animationType
+        self.animationDuration = animationDuration
+    }
+    
     static func defaultAppearance() -> HexagonalItemViewAppearance {
         return HexagonalItemViewAppearance(needToConfigureItem: false,
             itemSize: 50,
