@@ -25,12 +25,16 @@ class AppViewController: UIViewController {
         let view = HexagonalView(frame: self.view.bounds)
         view.hexagonalDataSource = self
         view.hexagonalDelegate = self
-        view.itemAppearance.needToConfigureItem = true
-        view.itemAppearance.itemBorderWidth = 0
-        view.itemAppearance.animationType = .Circle
-        view.itemAppearance.animationDuration = 0.05
+        
+        view.itemAppearance = HexagonalItemViewAppearance(needToConfigureItem: true,
+                                                          itemSize: 50,
+                                                          itemSpacing: 10,
+                                                          itemBorderWidth: 0,
+                                                          itemBorderColor: UIColor.grayColor(),
+                                                          animationType: .Circle,
+                                                          animationDuration: 0.05)
         return view
-        }()
+    }()
     
     //MARK: UIViewController lifecycle
     
