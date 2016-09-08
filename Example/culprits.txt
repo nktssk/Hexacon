@@ -1,0 +1,89 @@
+33.8ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:210:18	private final func transformView(view: HexagonalItemView)
+30.4ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:210:18	private final func transformView(view: HexagonalItemView)
+13.1ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:63:10	@objc dynamic func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+12.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:22	get {}
+11.8ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:53	(closure)
+11.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemViewAppearance.swift:43:17	static func defaultAppearance() -> HexagonalItemViewAppearance
+11.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemViewAppearance.swift:43:17	static func defaultAppearance() -> HexagonalItemViewAppearance
+11.1ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:22	final get {}
+10.9ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:89:18	private final func neighbor(origin origin: CGPoint, direction: HexagonalDirection) -> CGPoint
+10.9ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:89:18	private final func neighbor(origin origin: CGPoint, direction: HexagonalDirection) -> CGPoint
+10.7ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:53	(closure)
+10.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:22	final get {}
+10.0ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:71:10	final func createGrid(FromCenter newCenter: CGPoint)
+9.9ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:22	final get {}
+9.8ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:53	(closure)
+9.7ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:106:18	private final func createRing(withRadius radius: Int)
+9.7ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:72:10	@objc dynamic func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+9.5ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:53	(closure)
+9.5ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:72:10	@objc dynamic func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+9.4ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:71:10	final func createGrid(FromCenter newCenter: CGPoint)
+8.9ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:106:18	private final func createRing(withRadius radius: Int)
+8.8ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:22	get {}
+8.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:63:10	@objc dynamic func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int)
+8.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:53	(closure)
+8.1ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:31:19	@objc override final func viewDidLoad()
+7.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:22	final get {}
+7.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemView.swift:68:10	@objc dynamic func roundImage(color: UIColor? = default, borderWidth: CGFloat = default) -> UIImage
+7.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalDirection.swift:37:10	func direction() -> CGPoint
+7.0ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:22:53	(closure)
+6.4ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemView.swift:68:10	@objc dynamic func roundImage(color: UIColor? = default, borderWidth: CGFloat = default) -> UIImage
+5.7ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:41:19	@objc override func viewDidLoad()
+5.3ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemView.swift:55:10	@objc dynamic func roundImage() -> UIImage
+5.0ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemView.swift:55:10	@objc dynamic func roundImage() -> UIImage
+4.9ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:195:18	private final func positionAndAnimateItemView(forCenter center: CGPoint, ring: Int, index: Int)
+4.9ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:195:18	private final func positionAndAnimateItemView(forCenter center: CGPoint, ring: Int, index: Int)
+4.9ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalDirection.swift:37:10	func direction() -> CGPoint
+4.5ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:31:19	@objc override final func viewDidLoad()
+3.7ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:41:19	@objc override func viewDidLoad()
+3.4ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:22:9	final didSet {}
+3.4ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalDirection.swift:23:19	mutating func move()
+3.3ms	<invalid loc>	get {}
+3.3ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalDirection.swift:23:19	mutating func move()
+3.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:261:18	private final func getDistanceToBorder(center center: CGPoint, distanceToBeOffset: CGFloat, insets: UIEdgeInsets) -> CGFloat
+3.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:22:9	final didSet {}
+3.1ms	<invalid loc>	get {}
+3.0ms	<invalid loc>	get {}
+3.0ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:261:18	private final func getDistanceToBorder(center center: CGPoint, distanceToBeOffset: CGFloat, insets: UIEdgeInsets) -> CGFloat
+3.0ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:165:18	private final func createHexagonalViewItem(index: Int) -> HexagonalItemView
+2.9ms	<invalid loc>	get {}
+2.9ms	<invalid loc>	get {}
+2.8ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:314:17	@objc public final func reloadData()
+2.8ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:165:18	private final func createHexagonalViewItem(index: Int) -> HexagonalItemView
+2.7ms	<invalid loc>	get {}
+2.7ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:314:17	@objc public final func reloadData()
+2.5ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:22	get {}
+2.5ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:22	get {}
+2.4ms	<invalid loc>	init?(rawValue: Int)
+2.4ms	<invalid loc>	init?(rawValue: Int)
+2.3ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:48:5	init(size: Int, itemSpacing: CGFloat, itemSize: CGFloat)
+2.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:53	(closure)
+2.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:149:18	private final func createHexagonalGrid()
+2.2ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:53	(closure)
+2.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:149:18	private final func createHexagonalGrid()
+2.0ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:48:5	init(size: Int, itemSpacing: CGFloat, itemSize: CGFloat)
+1.9ms	<invalid loc>	get {}
+1.8ms	<invalid loc>	get {}
+1.6ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:63:10	final func sizeForGridSize() -> CGFloat
+1.5ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalPattern.swift:63:10	final func sizeForGridSize() -> CGFloat
+1.3ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemView.swift:19:12	public init(image: UIImage, appearance: HexagonalItemViewAppearance)
+1.3ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalItemView.swift:19:12	public init(image: UIImage, appearance: HexagonalItemViewAppearance)
+1.3ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:22	get {}
+1.2ms	<invalid loc>	get {}
+1.2ms	<invalid loc>	get {}
+1.2ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:293:18	private final func centerOnIndex(index: Int, zoomScale: CGFloat)
+1.1ms	<invalid loc>	get {}
+1.1ms	<invalid loc>	get {}
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:400:17	@objc public dynamic func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:400:17	@objc public dynamic func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:353:25	private final class func closestIndexToContentViewCenter(contentViewCenter: CGPoint, currentIndex: Int, views: [UIView]) -> Int
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:353:25	private final class func closestIndexToContentViewCenter(contentViewCenter: CGPoint, currentIndex: Int, views: [UIView]) -> Int
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:293:18	private final func centerOnIndex(index: Int, zoomScale: CGFloat)
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:55:10	@objc dynamic func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int
+1.1ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/AppViewController.swift:24:53	(closure)
+1.0ms	<invalid loc>	get {}
+1.0ms	<invalid loc>	get {}
+1.0ms	<invalid loc>	get {}
+1.0ms	<invalid loc>	get {}
+1.0ms	/Users/gautiergdx/Development/Hexacon/Example/Pods/Hexacon/Hexacon/HexagonalView.swift:243:18	private final func centerScrollViewContents()
+1.0ms	/Users/gautiergdx/Development/Hexacon/Example/ExaconExample/ViewController.swift:55:10	@objc dynamic func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int

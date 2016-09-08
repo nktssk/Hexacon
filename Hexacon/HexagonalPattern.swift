@@ -18,7 +18,7 @@ final class HexagonalPattern {
 
     internal var repositionCenter: ((CGPoint, Int, Int) -> ())?
     
-    private var position: HexagonalPosition! {
+    fileprivate var position: HexagonalPosition! {
         didSet {
             //while our position is bellow the size we can continue
             guard positionIndex < size else {
@@ -31,17 +31,17 @@ final class HexagonalPattern {
         }
     }
     
-    private var directionFromCenter: HexagonalDirection
+    fileprivate var directionFromCenter: HexagonalDirection
     
-    private var reachedLastPosition = false
-    private var positionIndex = 0
+    fileprivate var reachedLastPosition = false
+    fileprivate var positionIndex = 0
     
-    private let sideNumber: Int = 6
+    fileprivate let sideNumber: Int = 6
     
     //properties
-    private let size: Int
-    private let itemSpacing: CGFloat
-    private let maxRadius: Int
+    fileprivate let size: Int
+    fileprivate let itemSpacing: CGFloat
+    fileprivate let maxRadius: Int
     
     // MARK: - init
     
@@ -50,7 +50,7 @@ final class HexagonalPattern {
         self.itemSpacing = itemSpacing + itemSize - 8
         maxRadius = size/6 + 1
         
-        directionFromCenter = .Right
+        directionFromCenter = .right
     }
     
     // MARK: - instance methods
@@ -86,7 +86,7 @@ final class HexagonalPattern {
     
     // MARK: - configuration methods
     
-    private func neighbor(origin origin: CGPoint,direction: HexagonalDirection) -> CGPoint {
+    fileprivate func neighbor(origin: CGPoint,direction: HexagonalDirection) -> CGPoint {
         //take the current direction
         let direction = direction.direction()
         
@@ -94,23 +94,23 @@ final class HexagonalPattern {
         return CGPoint(x: origin.x + itemSpacing*direction.x,y: origin.y + itemSpacing*direction.y)
     }
     
-    private func start(newCenter: CGPoint) {
+    fileprivate func start(_ newCenter: CGPoint) {
         //initializing with the center given
         position = (center: newCenter,ring: 0)
         
         //then jump on the first ring
-        position = (center: neighbor(origin: position.center,direction: .LeftDown),ring: 1)
+        position = (center: neighbor(origin: position.center,direction: .leftDown),ring: 1)
     }
     
     
-    private func createRing(withRadius radius: Int) {
+    fileprivate func createRing(withRadius radius: Int) {
         //for each side of the ring
         for _ in 0...(sideNumber - 1) {
             
             //in each posion in the side
             for directionIndex in 0...radius {
                 //stop if we are at the end of the ring
-                guard !(directionIndex == radius && directionFromCenter == .RightDown) else { continue }
+                guard !(directionIndex == radius && directionFromCenter == .rightDown) else { continue }
                 
                 //or add a new point
                 position = (center: neighbor(origin: position.center,direction: directionFromCenter),ring: radius + 1)
@@ -120,7 +120,7 @@ final class HexagonalPattern {
         }
     }
     
-    private func jumpToNextRing() {
+    fileprivate func jumpToNextRing() {
         //the next ring is always two position bellow the previous one
         position = (center: CGPoint(x: position.center.x ,y: position.center.y + 2*itemSpacing),ring: position.ring + 1)
     }

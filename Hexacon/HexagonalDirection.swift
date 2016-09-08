@@ -10,21 +10,21 @@ import UIKit
 
 enum HexagonalDirection: Int {
     
-    case Right
-    case RightUp
-    case LeftUp
-    case Left
-    case LeftDown
-    case RightDown
+    case right
+    case rightUp
+    case leftUp
+    case left
+    case leftDown
+    case rightDown
     
     /**
      increment the enum to the next move, if it reach the end it come back a the beggining
      */
     mutating func move()  {
-        if self != .RightDown {
+        if self != .rightDown {
             self = HexagonalDirection(rawValue: self.rawValue + 1)!
         } else {
-            self = .Right
+            self = .right
         }
     }
     
@@ -40,17 +40,17 @@ enum HexagonalDirection: Int {
         let verticalPadding: CGFloat = 1
         
         switch self {
-            case .Right:
+            case .right:
                 return CGPoint(x: horizontalPadding,y: 0)
-            case .RightUp:
+            case .rightUp:
                 return CGPoint(x: horizontalPadding/2,y: -verticalPadding)
-            case .LeftUp:
+            case .leftUp:
                 return CGPoint(x: -horizontalPadding/2,y: -verticalPadding)
-            case .Left:
+            case .left:
                 return CGPoint(x: -horizontalPadding,y: 0)
-            case .LeftDown:
+            case .leftDown:
                 return CGPoint(x: -horizontalPadding/2,y: verticalPadding)
-            case .RightDown:
+            case .rightDown:
                 return CGPoint(x: horizontalPadding/2,y: verticalPadding)
         }
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum HexagonalAnimationType { case Spiral, Circle, None }
+public enum HexagonalAnimationType { case spiral, circle, none }
 
 public struct HexagonalItemViewAppearance {
     
@@ -21,7 +21,7 @@ public struct HexagonalItemViewAppearance {
     
     //animation
     public let animationType: HexagonalAnimationType
-    public let animationDuration: NSTimeInterval
+    public let animationDuration: TimeInterval
     
     public init(needToConfigureItem: Bool,
             itemSize: CGFloat,
@@ -29,7 +29,7 @@ public struct HexagonalItemViewAppearance {
             itemBorderWidth: CGFloat,
             itemBorderColor: UIColor,
             animationType: HexagonalAnimationType,
-            animationDuration: NSTimeInterval) {
+            animationDuration: TimeInterval) {
         
         self.needToConfigureItem = needToConfigureItem
         self.itemSize = itemSize
@@ -45,8 +45,8 @@ public struct HexagonalItemViewAppearance {
             itemSize: 50,
             itemSpacing: 10,
             itemBorderWidth: 5,
-            itemBorderColor: UIColor.grayColor(),
-            animationType: .Circle,
+            itemBorderColor: UIColor.gray,
+            animationType: .circle,
             animationDuration: 0.2)
     }
 }
