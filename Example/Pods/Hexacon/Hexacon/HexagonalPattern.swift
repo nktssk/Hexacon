@@ -70,7 +70,7 @@ final class HexagonalPattern {
      */
     func createGrid(FromCenter newCenter: CGPoint) {
         //initializing the algorythm
-        start(newCenter)
+        start(newCenter: newCenter)
     
         //for each radius
         for radius in 0...maxRadius {
