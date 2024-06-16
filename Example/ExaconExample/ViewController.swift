@@ -13,7 +13,17 @@ final class ViewController: UIViewController {
     
     // MARK: - data
     
-    let iconArray: [UIImage] = ["Burglar","Businesswoman-1","Hacker","Ninja","Rapper-2","Rasta","Rocker","Surfer","Telemarketer-Woman-2"].map { UIImage(named: $0)! }
+    let iconArray: [UIImage] = [
+        "Burglar",
+        "Businesswoman-1",
+        "Hacker",
+        "Ninja",
+        "Rapper-2",
+        "Rasta",
+        "Rocker",
+        "Surfer",
+        "Telemarketer-Woman-2"
+    ].map { UIImage(named: $0)! }
     
     var dataArray = [UIImage]()
     
@@ -40,7 +50,7 @@ final class ViewController: UIViewController {
         view.addSubview(hexagonalView)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         hexagonalView.reloadData()
     }
@@ -48,11 +58,11 @@ final class ViewController: UIViewController {
 
 extension ViewController: HexagonalViewDataSource {
     
-    func hexagonalView(hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage? {
+    func hexagonalView(_ hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage? {
         return dataArray[index]
     }
     
-    func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int {
+    func numberOfItemInHexagonalView(_ hexagonalView: HexagonalView) -> Int {
         print(dataArray.count)
         return dataArray.count - 1
     }
@@ -60,7 +70,7 @@ extension ViewController: HexagonalViewDataSource {
 
 extension ViewController: HexagonalViewDelegate {
     
-    func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int) {
+    func hexagonalView(_ hexagonalView: HexagonalView, willCenterOnIndex index: Int) {
         print("didSelectItemAtIndex: \(index)")
     }
 }

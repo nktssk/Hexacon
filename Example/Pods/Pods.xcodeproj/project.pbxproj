@@ -3,211 +3,246 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17EF00290CCF990A964812ECDEB07340 /* HexagonalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F3EC118E08F6487B9FDFFFF48C222A /* HexagonalDirection.swift */; };
-		17F52036D58B4AAAAC7B996A27B5C298 /* Hexacon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72AE5BC05693DE3BD576EC48920233B5 /* Hexacon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		248DB0210349EF35CE16E98FE966F2A2 /* Hexacon.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDCE3BA9F891F5777BB3C2AA27A3F2A /* Hexacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28716687DC6DFF00FB1A508932871103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4E6AA231C605FB4929425EDEC45E2685 /* HexagonalPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E57EBF589FDF5C34C537C8174965A0 /* HexagonalPattern.swift */; };
-		694AC9B8CC67B4AE9854713F170F6B59 /* Pods-HexaconExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B67275485C87CA23F9970C5124DD27 /* Pods-HexaconExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D3B48C6D669AB01F200DA9058996BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A1DDC20DCE0218CEE697F85B3FA3419A /* HexagonalItemViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA67029A5B6B0C5AB147EEBE42165E7 /* HexagonalItemViewAppearance.swift */; };
-		C4D9B807B6F390A4D71E94DC21552229 /* Pods-HexaconExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8714216125EC22F5EF6A19F08DD37AE /* Pods-HexaconExample-dummy.m */; };
-		DA72EA4F86106E545AE53286FF2630DD /* Hexacon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 838689E1F6D038BB8C502BFA237DFE53 /* Hexacon-dummy.m */; };
-		DF0C8410CB13CD5B483EF6594967A2D0 /* HexagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E5D4BF7B312A792B6DBB948C4985A /* HexagonalView.swift */; };
-		EF93ADB3C0F6E51B5962B6E99C397A2F /* HexagonalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823DBFA3C53A09B85DB7EE5699159E2 /* HexagonalItemView.swift */; };
+		36E6B0932481B58DC5A0AA02A83ECB65 /* HexagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775EA6EBA7D4A5A4CDF3D3BB73E75B4 /* HexagonalView.swift */; };
+		45B3BE7795A5624F24C3BA80038E75D2 /* HexagonalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9C386FB2EB2D08D43AE60AD6D96B7 /* HexagonalDirection.swift */; };
+		5BAC993FDFCD484C268599D59B76FBCD /* HexagonalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E16E35ADD83BB86CCFFCDC7B7CBF7F /* HexagonalItemView.swift */; };
+		60FC082E6F229C3C50D62B67763A8908 /* Pods-HexaconExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A4388AA43B11547D9498B18AAD6BEE /* Pods-HexaconExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7545DD7D4D6DCAF39C15AA344BED31E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A80975A1CB65C311B739377EA1C568CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B3C6AF57B6D88E0E564FCBEC01A779D4 /* Hexacon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4013CA54F4AD14B4145E58674CE654D8 /* Hexacon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9B42C54A83991FFE278D8D9287C206 /* Hexacon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CB585CD9748FD5BAC2C0C71B4481AE /* Hexacon-dummy.m */; };
+		D35EC1294E813B75C28FBD28B2DBC7FE /* Hexacon.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7E3683DCEA853A64157281866B544A /* Hexacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6008FD161C1D5FE19B5C37A704C32E /* Pods-HexaconExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5DFCB54F33DC460B5C053D1B9CF999 /* Pods-HexaconExample-dummy.m */; };
+		E0328ED7F7745BB025E16C17AEECF0E7 /* HexagonalPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7011F27BC6C96286C48C32BC4771D /* HexagonalPattern.swift */; };
+		FBCE47A86ED51E6746F71B99CC510F36 /* HexagonalItemViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B380E2E94CE86FDB271AA1115BA18FC /* HexagonalItemViewAppearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E738E94CF796B6ECD1E6D772D95436C8 /* PBXContainerItemProxy */ = {
+		56E8C7EED20BA734DEF4E00156542BCA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 59F4B20A211AA9DB03B8CD9361EB0B4F;
+			remoteGlobalIDString = DD5B5C3B51D105DFD204FD54458540E2;
 			remoteInfo = Hexacon;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16967BCEB35D7C069F3103B39BE3420C /* Hexacon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hexacon.xcconfig; sourceTree = "<group>"; };
-		1CFD48876CF6766A29E4071B48E2197E /* Pods-HexaconExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HexaconExample-frameworks.sh"; sourceTree = "<group>"; };
-		27FFEF14D36C86A3E110D828B99916A7 /* Pods-HexaconExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HexaconExample.modulemap"; sourceTree = "<group>"; };
-		475A7806B52337178EC8EC4B89CF89C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56B941E945504458D7C6B4166660B773 /* Pods-HexaconExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HexaconExample.debug.xcconfig"; sourceTree = "<group>"; };
-		579E5D4BF7B312A792B6DBB948C4985A /* HexagonalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalView.swift; path = Hexacon/HexagonalView.swift; sourceTree = "<group>"; };
-		59C4DD52A6349A5F4E5F9C8C3740A7DC /* Pods_HexaconExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexaconExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64B92DE2550746CDBD8AC5AFA3129167 /* Pods-HexaconExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HexaconExample.release.xcconfig"; sourceTree = "<group>"; };
-		660AE30F4835261269F47DCFD12F3AFF /* Hexacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hexacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DE8A606065CCFE712C6AAB705BF551F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72AE5BC05693DE3BD576EC48920233B5 /* Hexacon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hexacon-umbrella.h"; sourceTree = "<group>"; };
-		79E57EBF589FDF5C34C537C8174965A0 /* HexagonalPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalPattern.swift; path = Hexacon/HexagonalPattern.swift; sourceTree = "<group>"; };
-		838689E1F6D038BB8C502BFA237DFE53 /* Hexacon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hexacon-dummy.m"; sourceTree = "<group>"; };
-		868A71147E0E8CAA73BB64B1C4D71D58 /* Hexacon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Hexacon.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98F3EC118E08F6487B9FDFFFF48C222A /* HexagonalDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalDirection.swift; path = Hexacon/HexagonalDirection.swift; sourceTree = "<group>"; };
-		9FA67029A5B6B0C5AB147EEBE42165E7 /* HexagonalItemViewAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalItemViewAppearance.swift; path = Hexacon/HexagonalItemViewAppearance.swift; sourceTree = "<group>"; };
-		A694A9D5903DBAE52C99294EF66B892A /* Pods-HexaconExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HexaconExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B7B4DD1C9F6C1631C41B2B5B33C169C8 /* Pods-HexaconExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HexaconExample-resources.sh"; sourceTree = "<group>"; };
-		B7B67275485C87CA23F9970C5124DD27 /* Pods-HexaconExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HexaconExample-umbrella.h"; sourceTree = "<group>"; };
-		B98F0BC929924DC9129463C51A9D0E4D /* Hexacon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hexacon-prefix.pch"; sourceTree = "<group>"; };
-		C8714216125EC22F5EF6A19F08DD37AE /* Pods-HexaconExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HexaconExample-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D2DA888BFEF4102E930BBD89A6B91633 /* Pods-HexaconExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HexaconExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		D823DBFA3C53A09B85DB7EE5699159E2 /* HexagonalItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalItemView.swift; path = Hexacon/HexagonalItemView.swift; sourceTree = "<group>"; };
-		FCDCE3BA9F891F5777BB3C2AA27A3F2A /* Hexacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Hexacon.h; path = Hexacon/Hexacon.h; sourceTree = "<group>"; };
+		01CB585CD9748FD5BAC2C0C71B4481AE /* Hexacon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hexacon-dummy.m"; sourceTree = "<group>"; };
+		041E915F8DC89AC8A6524329E6FBAA75 /* Pods-HexaconExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HexaconExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		0AE7011F27BC6C96286C48C32BC4771D /* HexagonalPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalPattern.swift; path = Hexacon/HexagonalPattern.swift; sourceTree = "<group>"; };
+		0D5CAF9167C95EB84FA1950419C0EB21 /* Hexacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hexacon.debug.xcconfig; sourceTree = "<group>"; };
+		1727F3E063D0509AB45C9B02023FE16F /* Pods-HexaconExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HexaconExample.debug.xcconfig"; sourceTree = "<group>"; };
+		1823697237460125BDA1B2CB8833CBD7 /* Pods-HexaconExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HexaconExample.modulemap"; sourceTree = "<group>"; };
+		23D8EC5CE1CE3F1ED1E47756F4773091 /* Pods-HexaconExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HexaconExample.release.xcconfig"; sourceTree = "<group>"; };
+		30CBE14C7CF32AEE21D3D71EE120EDE7 /* Pods-HexaconExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HexaconExample-frameworks.sh"; sourceTree = "<group>"; };
+		31E16E35ADD83BB86CCFFCDC7B7CBF7F /* HexagonalItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalItemView.swift; path = Hexacon/HexagonalItemView.swift; sourceTree = "<group>"; };
+		326A368189CF843938652DF26044174B /* Pods-HexaconExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HexaconExample-Info.plist"; sourceTree = "<group>"; };
+		3CD1F70B9F928173C5365200072709A8 /* Hexacon */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hexacon; path = Hexacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3D819059C0A7826935BA2B08C9E68C /* Pods-HexaconExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HexaconExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4013CA54F4AD14B4145E58674CE654D8 /* Hexacon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hexacon-umbrella.h"; sourceTree = "<group>"; };
+		561F7701B174B3F0F6A16A67DD011641 /* Hexacon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hexacon-prefix.pch"; sourceTree = "<group>"; };
+		5F27447759501609D795337A933F0FBD /* Pods-HexaconExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HexaconExample"; path = Pods_HexaconExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63936539188CDF8CE85D7F528B9961BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6E0C95BA2684B203E752959FA5B5B968 /* Hexacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hexacon.release.xcconfig; sourceTree = "<group>"; };
+		6FB9C386FB2EB2D08D43AE60AD6D96B7 /* HexagonalDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalDirection.swift; path = Hexacon/HexagonalDirection.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B380E2E94CE86FDB271AA1115BA18FC /* HexagonalItemViewAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalItemViewAppearance.swift; path = Hexacon/HexagonalItemViewAppearance.swift; sourceTree = "<group>"; };
+		7EC22776347EF785EC4AC6B27B1C9B0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		920C751E7AF404B69C94AD7197B7FB8E /* Hexacon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Hexacon-Info.plist"; sourceTree = "<group>"; };
+		9D5DFCB54F33DC460B5C053D1B9CF999 /* Pods-HexaconExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HexaconExample-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		ADCD70F3FCE616F2D96EEB50E1B69822 /* Hexacon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Hexacon.modulemap; sourceTree = "<group>"; };
+		B6A4388AA43B11547D9498B18AAD6BEE /* Pods-HexaconExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HexaconExample-umbrella.h"; sourceTree = "<group>"; };
+		C896A2A1A789E2DE800E3D8EF14C6E38 /* Hexacon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Hexacon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D775EA6EBA7D4A5A4CDF3D3BB73E75B4 /* HexagonalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexagonalView.swift; path = Hexacon/HexagonalView.swift; sourceTree = "<group>"; };
+		ED7E3683DCEA853A64157281866B544A /* Hexacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Hexacon.h; path = Hexacon/Hexacon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9002688BDCA427287CEF8A8949772202 /* Frameworks */ = {
+		17F16E98725EADED0728796B86B4609F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D3B48C6D669AB01F200DA9058996BCE /* Foundation.framework in Frameworks */,
+				7545DD7D4D6DCAF39C15AA344BED31E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FD4CF1E7990227AA1A98D0C82195255 /* Frameworks */ = {
+		5B252B0DF7DDEE93D549DA74226795D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28716687DC6DFF00FB1A508932871103 /* Foundation.framework in Frameworks */,
+				A80975A1CB65C311B739377EA1C568CB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15C7ACDA0B6ABEC136DBD18F7B3DCAA0 /* Products */ = {
+		153A2B13A0E21AD5416892F8162DF6FE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				660AE30F4835261269F47DCFD12F3AFF /* Hexacon.framework */,
-				59C4DD52A6349A5F4E5F9C8C3740A7DC /* Pods_HexaconExample.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2B0664FA7FBCA77ABFC0B89F8AAE9E23 /* Hexacon */ = {
-			isa = PBXGroup;
-			children = (
-				FCDCE3BA9F891F5777BB3C2AA27A3F2A /* Hexacon.h */,
-				98F3EC118E08F6487B9FDFFFF48C222A /* HexagonalDirection.swift */,
-				D823DBFA3C53A09B85DB7EE5699159E2 /* HexagonalItemView.swift */,
-				9FA67029A5B6B0C5AB147EEBE42165E7 /* HexagonalItemViewAppearance.swift */,
-				79E57EBF589FDF5C34C537C8174965A0 /* HexagonalPattern.swift */,
-				579E5D4BF7B312A792B6DBB948C4985A /* HexagonalView.swift */,
-				B0FF05A6F29F421719F1BB3D2880BD08 /* Support Files */,
-			);
-			path = Hexacon;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5B979FBB8C8E39E47BC8A091BBAE31A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2B0664FA7FBCA77ABFC0B89F8AAE9E23 /* Hexacon */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5B979FBB8C8E39E47BC8A091BBAE31A5 /* Pods */,
-				15C7ACDA0B6ABEC136DBD18F7B3DCAA0 /* Products */,
-				9B8F9AC361DE6CACF45F3242BC33A153 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9B8F9AC361DE6CACF45F3242BC33A153 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C531B3180FE34B91119C6D5BD44F3D95 /* Pods-HexaconExample */,
+				5DD02F370A55BBE34E40C500BCFF8CD9 /* Pods-HexaconExample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B0FF05A6F29F421719F1BB3D2880BD08 /* Support Files */ = {
+		4A7D1C0F35AE68E740406075A10D20B1 /* Hexacon */ = {
 			isa = PBXGroup;
 			children = (
-				868A71147E0E8CAA73BB64B1C4D71D58 /* Hexacon.modulemap */,
-				16967BCEB35D7C069F3103B39BE3420C /* Hexacon.xcconfig */,
-				838689E1F6D038BB8C502BFA237DFE53 /* Hexacon-dummy.m */,
-				B98F0BC929924DC9129463C51A9D0E4D /* Hexacon-prefix.pch */,
-				72AE5BC05693DE3BD576EC48920233B5 /* Hexacon-umbrella.h */,
-				6DE8A606065CCFE712C6AAB705BF551F /* Info.plist */,
+				ED7E3683DCEA853A64157281866B544A /* Hexacon.h */,
+				6FB9C386FB2EB2D08D43AE60AD6D96B7 /* HexagonalDirection.swift */,
+				31E16E35ADD83BB86CCFFCDC7B7CBF7F /* HexagonalItemView.swift */,
+				7B380E2E94CE86FDB271AA1115BA18FC /* HexagonalItemViewAppearance.swift */,
+				0AE7011F27BC6C96286C48C32BC4771D /* HexagonalPattern.swift */,
+				D775EA6EBA7D4A5A4CDF3D3BB73E75B4 /* HexagonalView.swift */,
+				70CDE4DAFC72D5D6CF1684943909E718 /* Pod */,
+				DF532E9F7EE2913BB5EE12A7B2A288C6 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Hexacon";
+			name = Hexacon;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		C531B3180FE34B91119C6D5BD44F3D95 /* Pods-HexaconExample */ = {
+		5DD02F370A55BBE34E40C500BCFF8CD9 /* Pods-HexaconExample */ = {
 			isa = PBXGroup;
 			children = (
-				475A7806B52337178EC8EC4B89CF89C9 /* Info.plist */,
-				27FFEF14D36C86A3E110D828B99916A7 /* Pods-HexaconExample.modulemap */,
-				A694A9D5903DBAE52C99294EF66B892A /* Pods-HexaconExample-acknowledgements.markdown */,
-				D2DA888BFEF4102E930BBD89A6B91633 /* Pods-HexaconExample-acknowledgements.plist */,
-				C8714216125EC22F5EF6A19F08DD37AE /* Pods-HexaconExample-dummy.m */,
-				1CFD48876CF6766A29E4071B48E2197E /* Pods-HexaconExample-frameworks.sh */,
-				B7B4DD1C9F6C1631C41B2B5B33C169C8 /* Pods-HexaconExample-resources.sh */,
-				B7B67275485C87CA23F9970C5124DD27 /* Pods-HexaconExample-umbrella.h */,
-				56B941E945504458D7C6B4166660B773 /* Pods-HexaconExample.debug.xcconfig */,
-				64B92DE2550746CDBD8AC5AFA3129167 /* Pods-HexaconExample.release.xcconfig */,
+				1823697237460125BDA1B2CB8833CBD7 /* Pods-HexaconExample.modulemap */,
+				3D3D819059C0A7826935BA2B08C9E68C /* Pods-HexaconExample-acknowledgements.markdown */,
+				041E915F8DC89AC8A6524329E6FBAA75 /* Pods-HexaconExample-acknowledgements.plist */,
+				9D5DFCB54F33DC460B5C053D1B9CF999 /* Pods-HexaconExample-dummy.m */,
+				30CBE14C7CF32AEE21D3D71EE120EDE7 /* Pods-HexaconExample-frameworks.sh */,
+				326A368189CF843938652DF26044174B /* Pods-HexaconExample-Info.plist */,
+				B6A4388AA43B11547D9498B18AAD6BEE /* Pods-HexaconExample-umbrella.h */,
+				1727F3E063D0509AB45C9B02023FE16F /* Pods-HexaconExample.debug.xcconfig */,
+				23D8EC5CE1CE3F1ED1E47756F4773091 /* Pods-HexaconExample.release.xcconfig */,
 			);
 			name = "Pods-HexaconExample";
 			path = "Target Support Files/Pods-HexaconExample";
 			sourceTree = "<group>";
 		};
+		70CDE4DAFC72D5D6CF1684943909E718 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C896A2A1A789E2DE800E3D8EF14C6E38 /* Hexacon.podspec */,
+				63936539188CDF8CE85D7F528B9961BA /* LICENSE */,
+				7EC22776347EF785EC4AC6B27B1C9B0E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8AC885BB2EA6BE359C588B9774A21BB0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D1C0F35AE68E740406075A10D20B1 /* Hexacon */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8AC885BB2EA6BE359C588B9774A21BB0 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D70236C940D1B3E89AC01F77FAE3A869 /* Products */,
+				153A2B13A0E21AD5416892F8162DF6FE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70236C940D1B3E89AC01F77FAE3A869 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD1F70B9F928173C5365200072709A8 /* Hexacon */,
+				5F27447759501609D795337A933F0FBD /* Pods-HexaconExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF532E9F7EE2913BB5EE12A7B2A288C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADCD70F3FCE616F2D96EEB50E1B69822 /* Hexacon.modulemap */,
+				01CB585CD9748FD5BAC2C0C71B4481AE /* Hexacon-dummy.m */,
+				920C751E7AF404B69C94AD7197B7FB8E /* Hexacon-Info.plist */,
+				561F7701B174B3F0F6A16A67DD011641 /* Hexacon-prefix.pch */,
+				4013CA54F4AD14B4145E58674CE654D8 /* Hexacon-umbrella.h */,
+				0D5CAF9167C95EB84FA1950419C0EB21 /* Hexacon.debug.xcconfig */,
+				6E0C95BA2684B203E752959FA5B5B968 /* Hexacon.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Hexacon";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A611B75D395FDC38F433011518A51CDB /* Headers */ = {
+		243984C5ADB50580642060E15D55D777 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694AC9B8CC67B4AE9854713F170F6B59 /* Pods-HexaconExample-umbrella.h in Headers */,
+				D35EC1294E813B75C28FBD28B2DBC7FE /* Hexacon.h in Headers */,
+				B3C6AF57B6D88E0E564FCBEC01A779D4 /* Hexacon-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4AF947622BCAC52B5869C4368C16E60 /* Headers */ = {
+		6F0CA8FECC2130FCE4CB57905D53C2D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F52036D58B4AAAAC7B996A27B5C298 /* Hexacon-umbrella.h in Headers */,
-				248DB0210349EF35CE16E98FE966F2A2 /* Hexacon.h in Headers */,
+				60FC082E6F229C3C50D62B67763A8908 /* Pods-HexaconExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		59F4B20A211AA9DB03B8CD9361EB0B4F /* Hexacon */ = {
+		124FFFDAFDB16B0F9EB91F2C40B9D4C0 /* Pods-HexaconExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B457B14B73E8ECBC6EF11F20DB65E148 /* Build configuration list for PBXNativeTarget "Hexacon" */;
+			buildConfigurationList = 02DFC455204D3B69852F19299D5F4D73 /* Build configuration list for PBXNativeTarget "Pods-HexaconExample" */;
 			buildPhases = (
-				ECDE476740CACE3FD2D1CE755845F424 /* Sources */,
-				9002688BDCA427287CEF8A8949772202 /* Frameworks */,
-				C4AF947622BCAC52B5869C4368C16E60 /* Headers */,
+				6F0CA8FECC2130FCE4CB57905D53C2D3 /* Headers */,
+				57C6F3E917017C746D697E92BF8963B8 /* Sources */,
+				17F16E98725EADED0728796B86B4609F /* Frameworks */,
+				8F8D4DD3D10CABEBDADB4B9D7480CC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A8A5C8E41A696D67CB54DE55F173B3C /* PBXTargetDependency */,
+			);
+			name = "Pods-HexaconExample";
+			productName = Pods_HexaconExample;
+			productReference = 5F27447759501609D795337A933F0FBD /* Pods-HexaconExample */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD5B5C3B51D105DFD204FD54458540E2 /* Hexacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D99F13BB55D0AB56C9AC21B3C8A5A1 /* Build configuration list for PBXNativeTarget "Hexacon" */;
+			buildPhases = (
+				243984C5ADB50580642060E15D55D777 /* Headers */,
+				4FA319FD174C7F848DC707352B421FA7 /* Sources */,
+				5B252B0DF7DDEE93D549DA74226795D2 /* Frameworks */,
+				0DCA1B5BB6F034AA9FC48E76D20FA9DE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -215,181 +250,127 @@
 			);
 			name = Hexacon;
 			productName = Hexacon;
-			productReference = 660AE30F4835261269F47DCFD12F3AFF /* Hexacon.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F60C7B4B74EC27AE9E0E7DAA5166940C /* Pods-HexaconExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2E4A3CE801F2F9112EBD865CEB2229EA /* Build configuration list for PBXNativeTarget "Pods-HexaconExample" */;
-			buildPhases = (
-				1B14FD75D5CE15513C016C5D94874814 /* Sources */,
-				9FD4CF1E7990227AA1A98D0C82195255 /* Frameworks */,
-				A611B75D395FDC38F433011518A51CDB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADC4D30F43D8EE30999B1185EF43EC59 /* PBXTargetDependency */,
-			);
-			name = "Pods-HexaconExample";
-			productName = "Pods-HexaconExample";
-			productReference = 59C4DD52A6349A5F4E5F9C8C3740A7DC /* Pods_HexaconExample.framework */;
+			productReference = 3CD1F70B9F928173C5365200072709A8 /* Hexacon */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 15C7ACDA0B6ABEC136DBD18F7B3DCAA0 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D70236C940D1B3E89AC01F77FAE3A869 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59F4B20A211AA9DB03B8CD9361EB0B4F /* Hexacon */,
-				F60C7B4B74EC27AE9E0E7DAA5166940C /* Pods-HexaconExample */,
+				DD5B5C3B51D105DFD204FD54458540E2 /* Hexacon */,
+				124FFFDAFDB16B0F9EB91F2C40B9D4C0 /* Pods-HexaconExample */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		1B14FD75D5CE15513C016C5D94874814 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		0DCA1B5BB6F034AA9FC48E76D20FA9DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4D9B807B6F390A4D71E94DC21552229 /* Pods-HexaconExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECDE476740CACE3FD2D1CE755845F424 /* Sources */ = {
+		8F8D4DD3D10CABEBDADB4B9D7480CC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA319FD174C7F848DC707352B421FA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA72EA4F86106E545AE53286FF2630DD /* Hexacon-dummy.m in Sources */,
-				17EF00290CCF990A964812ECDEB07340 /* HexagonalDirection.swift in Sources */,
-				EF93ADB3C0F6E51B5962B6E99C397A2F /* HexagonalItemView.swift in Sources */,
-				A1DDC20DCE0218CEE697F85B3FA3419A /* HexagonalItemViewAppearance.swift in Sources */,
-				4E6AA231C605FB4929425EDEC45E2685 /* HexagonalPattern.swift in Sources */,
-				DF0C8410CB13CD5B483EF6594967A2D0 /* HexagonalView.swift in Sources */,
+				CD9B42C54A83991FFE278D8D9287C206 /* Hexacon-dummy.m in Sources */,
+				45B3BE7795A5624F24C3BA80038E75D2 /* HexagonalDirection.swift in Sources */,
+				5BAC993FDFCD484C268599D59B76FBCD /* HexagonalItemView.swift in Sources */,
+				FBCE47A86ED51E6746F71B99CC510F36 /* HexagonalItemViewAppearance.swift in Sources */,
+				E0328ED7F7745BB025E16C17AEECF0E7 /* HexagonalPattern.swift in Sources */,
+				36E6B0932481B58DC5A0AA02A83ECB65 /* HexagonalView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57C6F3E917017C746D697E92BF8963B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6008FD161C1D5FE19B5C37A704C32E /* Pods-HexaconExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ADC4D30F43D8EE30999B1185EF43EC59 /* PBXTargetDependency */ = {
+		8A8A5C8E41A696D67CB54DE55F173B3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Hexacon;
-			target = 59F4B20A211AA9DB03B8CD9361EB0B4F /* Hexacon */;
-			targetProxy = E738E94CF796B6ECD1E6D772D95436C8 /* PBXContainerItemProxy */;
+			target = DD5B5C3B51D105DFD204FD54458540E2 /* Hexacon */;
+			targetProxy = 56E8C7EED20BA734DEF4E00156542BCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05F689E8CB4A7F452C38DBB5FC4D4E80 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16967BCEB35D7C069F3103B39BE3420C /* Hexacon.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Hexacon/Hexacon-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Hexacon/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Hexacon/Hexacon.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Hexacon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7EBBB9D7E28AE8893278F7A12EC6A5CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64B92DE2550746CDBD8AC5AFA3129167 /* Pods-HexaconExample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HexaconExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HexaconExample/Pods-HexaconExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HexaconExample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -398,167 +379,264 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		EBA5D5E78701F9A23EEE2DCE76EA0FE4 /* Debug */ = {
+		4CF3B0219B004932577C53C9052758C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16967BCEB35D7C069F3103B39BE3420C /* Hexacon.xcconfig */;
+			baseConfigurationReference = 1727F3E063D0509AB45C9B02023FE16F /* Pods-HexaconExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Hexacon/Hexacon-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Hexacon/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HexaconExample/Pods-HexaconExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Hexacon/Hexacon.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Hexacon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EFAD409A37952ACA5BC852C3665C5243 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56B941E945504458D7C6B4166660B773 /* Pods-HexaconExample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HexaconExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HexaconExample/Pods-HexaconExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HexaconExample;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C05EACDE54E7841BD11B97B1CD61BF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E0C95BA2684B203E752959FA5B5B968 /* Hexacon.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Hexacon/Hexacon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hexacon/Hexacon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Hexacon/Hexacon.modulemap";
+				PRODUCT_MODULE_NAME = Hexacon;
+				PRODUCT_NAME = Hexacon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D39FEEB4C32CE9DBEAAF2EE9C49EBA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5CAF9167C95EB84FA1950419C0EB21 /* Hexacon.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Hexacon/Hexacon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hexacon/Hexacon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Hexacon/Hexacon.modulemap";
+				PRODUCT_MODULE_NAME = Hexacon;
+				PRODUCT_NAME = Hexacon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEEB7EE18CBD6519052488504CBFF5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D8EC5CE1CE3F1ED1E47756F4773091 /* Pods-HexaconExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HexaconExample/Pods-HexaconExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HexaconExample/Pods-HexaconExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		02DFC455204D3B69852F19299D5F4D73 /* Build configuration list for PBXNativeTarget "Pods-HexaconExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84FD87D359382A37B07149A12641B965 /* Debug */,
-				F594C655D48020EC34B00AA63E001773 /* Release */,
+				4CF3B0219B004932577C53C9052758C2 /* Debug */,
+				DEEB7EE18CBD6519052488504CBFF5F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E4A3CE801F2F9112EBD865CEB2229EA /* Build configuration list for PBXNativeTarget "Pods-HexaconExample" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFAD409A37952ACA5BC852C3665C5243 /* Debug */,
-				7EBBB9D7E28AE8893278F7A12EC6A5CA /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B457B14B73E8ECBC6EF11F20DB65E148 /* Build configuration list for PBXNativeTarget "Hexacon" */ = {
+		74D99F13BB55D0AB56C9AC21B3C8A5A1 /* Build configuration list for PBXNativeTarget "Hexacon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBA5D5E78701F9A23EEE2DCE76EA0FE4 /* Debug */,
-				05F689E8CB4A7F452C38DBB5FC4D4E80 /* Release */,
+				D39FEEB4C32CE9DBEAAF2EE9C49EBA89 /* Debug */,
+				C05EACDE54E7841BD11B97B1CD61BF06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

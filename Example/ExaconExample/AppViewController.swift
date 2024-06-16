@@ -13,9 +13,33 @@ class AppViewController: UIViewController {
     
     // MARK: - data
     
-    let iconArray: [UIImage] = ["call","mail","music","appstore","message","settings","photo","camera","safari","notes",
-                                "addressbook","time","calculator","movie","maps","facetime","gamecenter","compass",
-                                "passbook","stocks","newsstand","calendar","reminders","weather","itunes"].map { UIImage(named: $0)! }
+    let iconArray: [UIImage] = [
+        "call",
+        "mail",
+        "music",
+        "appstore",
+        "message",
+        "settings",
+        "photo",
+        "camera",
+        "safari",
+        "notes",
+        "addressbook",
+        "time",
+        "calculator",
+        "movie",
+        "maps",
+        "facetime",
+        "gamecenter",
+        "compass",
+        "passbook",
+        "stocks",
+        "newsstand",
+        "calendar",
+        "reminders",
+        "weather",
+        "itunes"
+    ].map { UIImage(named: $0)! }
     
     var dataArray = [UIImage]()
     
@@ -25,14 +49,16 @@ class AppViewController: UIViewController {
         let view = HexagonalView(frame: self.view.bounds)
         view.hexagonalDataSource = self
         view.hexagonalDelegate = self
+        view.itemAppearance = HexagonalItemViewAppearance(
+            needToConfigureItem: true,
+            itemSize: 50,
+            itemSpacing: 10,
+            itemBorderWidth: 0,
+            itemBorderColor: UIColor.gray,
+            animationType: .circle,
+            animationDuration: 0.05
+        )
         
-        view.itemAppearance = HexagonalItemViewAppearance(needToConfigureItem: true,
-                                                          itemSize: 50,
-                                                          itemSpacing: 10,
-                                                          itemBorderWidth: 0,
-                                                          itemBorderColor: UIColor.grayColor(),
-                                                          animationType: .Circle,
-                                                          animationDuration: 0.05)
         return view
     }()
     
@@ -50,7 +76,7 @@ class AppViewController: UIViewController {
         view.addSubview(hexagonalView)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         hexagonalView.reloadData()
     }
@@ -58,24 +84,23 @@ class AppViewController: UIViewController {
 
 extension AppViewController: HexagonalViewDataSource {
     
-    func hexagonalView(hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage? {
+    func hexagonalView(_ hexagonalView: HexagonalView, imageForIndex index: Int) -> UIImage? {
         return dataArray[index]
     }
     
-    func numberOfItemInHexagonalView(hexagonalView: HexagonalView) -> Int {
+    func numberOfItemInHexagonalView(_ hexagonalView: HexagonalView) -> Int {
         return dataArray.count - 1
     }
 }
 
 extension AppViewController: HexagonalViewDelegate {
     
-    func hexagonalView(hexagonalView: HexagonalView, didSelectItemAtIndex index: Int) {
+    func hexagonalView(_ hexagonalView: HexagonalView, didSelectItemAtIndex index: Int) {
         print("didSelectItemAtIndex: \(index)")
     }
     
-    func hexagonalView(hexagonalView: HexagonalView, willCenterOnIndex index: Int) {
+    func hexagonalView(_ hexagonalView: HexagonalView, willCenterOnIndex index: Int) {
         print("willCenterOnIndex: \(index)")
-
     }
 }
 

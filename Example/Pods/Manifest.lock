@@ -1,12 +1,16 @@
 PODS:
-  - Hexacon (1.0.6)
+  - Hexacon (2.0.0)
 
 DEPENDENCIES:
-  - Hexacon
+  - Hexacon (from `../`)
+
+EXTERNAL SOURCES:
+  Hexacon:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Hexacon: a97ac6d97c8d4fc84f99709277657fed64333946
+  Hexacon: 2da705778758d92b0bbbca3055feb4a78d86fb5e
 
-PODFILE CHECKSUM: 018917b84b2d9ada8adc86e0dcf61fbca15c9223
+PODFILE CHECKSUM: 02750e389b94733b9e61af7ae0747d8d56b3d28a
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.15.2

@@ -1,5 +1,7 @@
+platform :ios, '12.0'
+
 use_frameworks!
 
 target ‘HexaconExample’ do
-   pod 'Hexacon'
+   pod 'Hexacon', :path => '../'
 end
